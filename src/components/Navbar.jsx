@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSun, faMoon } from "@fortawesome/free-regular-svg-icons";
+import Toggle from "./Toggle"; // Import the Toggle component
 
 const Navbar = ({ theme, handleThemeSwitch }) => {
   const [activeLink, setActiveLink] = useState(null);
@@ -57,22 +58,8 @@ const Navbar = ({ theme, handleThemeSwitch }) => {
             </a>
           </li>
         </ul>
-        <button
-          onClick={handleThemeSwitch}
-          className="w-12 h-12 p-2 bg-transparent border border-gray-300 rounded-full focus:outline-none"
-        >
-          {theme === "light" ? (
-            <FontAwesomeIcon
-              icon={faMoon}
-              className="-rotate-15 text-black-500 text-3xl"
-            />
-          ) : (
-            <FontAwesomeIcon
-              icon={faSun}
-              className="text-yellow-500 text-3xl"
-            />
-          )}
-        </button>
+        {/* Replace theme switch button with Toggle component */}
+        <Toggle toggled={theme === "dark"} onClick={handleThemeSwitch} />
         <button className="font-medium dark:text-white border-2  border-orange-500 rounded-lg px-4 py-2 hover:bg-orange-500 hover:text-white focus:outline-none">
           SignIn
         </button>
