@@ -4,7 +4,7 @@ function Mentors() {
   return (
     <section className="max-h-full mt-8 md:mt-16">
       <h1 className="text-3xl md:text-4xl font-sans font-semibold text-center">
-        Lorem Ipsum
+        Our Mentors
       </h1>
       <p className="mt-4 text-[#8A8A8A] text-center text-base md:text-lg">
         Lorem Ipsum courses we have? lorem ipsum
