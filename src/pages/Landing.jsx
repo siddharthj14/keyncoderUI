@@ -31,7 +31,7 @@ export default function Landing() {
 				</div>
 				<div className='mt-12 medium:mt-[100px]'>
 					<img
-						src='src\assets\hero.png'
+						src='../public/images/hero.png'
 						alt='Person pointing'
 						className='max-w-xs medium:max-w-lg m-6 medium:m-2 rounded-lg shadow-lg'
 					/>

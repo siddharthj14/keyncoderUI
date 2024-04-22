@@ -33,7 +33,7 @@ function Reason() {
             lorem ipsum <br /> lorem ipsum
           </p>
         </div> */}
-        <img src="/src/assets/reasons.png" alt="" />
+        <img src="../public/images/reasons.png" alt="" />
       </div>
     </section>
   );
