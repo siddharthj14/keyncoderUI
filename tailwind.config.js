@@ -15,6 +15,9 @@ export default {
 				body: ['"Open Sans"'],
 				roboto: ['"Roboto"'],
 			},
+			screens: {
+				"small": "830px",
+			},
 		},
 	},
 	plugins: [],

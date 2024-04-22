@@ -22,25 +22,25 @@ function App() {
   };
 
   return (
-    <div className="flex flex-col  bg-white text-black dark:bg-[#2E2727] dark:text-white">
-      <Navbar handleThemeSwitch={handleThemeSwitch} theme={theme} />
-      <section className="flex-grow min-h-screen">
-        <Landing />
-      </section>
-      <section className="flex-grow min-h-screen">
-        <Courses />
-      </section>
-      <section className="flex-grow min-h-screen">
-        <Mentors />
-      </section>
-      <section className="flex-grow min-h-screen">
-        <Reason />
-      </section>
-      <section className="flex-grow min-h-screen">
-        <CallToAction />
-      </section>
-    </div>
-  );
+			<div className='flex flex-col w-full overflow-x-hidden bg-white text-black dark:bg-[#2E2727] dark:text-white'>
+				<Navbar handleThemeSwitch={handleThemeSwitch} theme={theme} />
+				<section className=' min-h-screen'>
+					<Landing />
+				</section>
+				<section className=' min-h-screen'>
+					<Courses />
+				</section>
+				<section className=' min-h-screen'>
+					<Mentors />
+				</section>
+				<section className=' min-h-screen'>
+					<Reason />
+				</section>
+				<section className=' min-h-screen'>
+					<CallToAction />
+				</section>
+			</div>
+		);
 }
 
 export default App;
