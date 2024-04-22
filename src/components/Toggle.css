@@ -6,6 +6,7 @@
     background-image: linear-gradient(aqua, skyblue);
     position: relative;
     cursor: pointer;
+    display: inline-block;
 }
 
 .toggle.night {

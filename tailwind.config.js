@@ -17,6 +17,7 @@ export default {
 			},
 			screens: {
 				"small": "830px",
+				"medium":"1000px"
 			},
 		},
 	},

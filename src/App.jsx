@@ -5,6 +5,7 @@ import Courses from "./pages/Courses";
 import Mentors from "./pages/Mentors";
 import Reason from "./pages/Reason";
 import CallToAction from "./pages/CallToAction";
+import Testimonial from "./pages/Testimonial";
 
 function App() {
   const [theme, setTheme] = useState("light");
@@ -22,22 +23,26 @@ function App() {
   };
 
   return (
-			<div className='flex flex-col w-full overflow-x-hidden bg-white text-black dark:bg-[#2E2727] dark:text-white'>
+			<div className='flex flex-col w-full h-full overflow-x-hidden bg-white text-black dark:bg-[#2E2727] dark:text-white'>
 				<Navbar handleThemeSwitch={handleThemeSwitch} theme={theme} />
-				<section className=' min-h-screen'>
+				<section className=' h-screen'>
 					<Landing />
 				</section>
-				<section className=' min-h-screen'>
+				<section className=' h-screen'>
 					<Courses />
 				</section>
-				<section className=' min-h-screen'>
+				<section className=' h-screen'>
+					<Testimonial />
+				</section>
+				<section className=' h-screen'>
 					<Mentors />
 				</section>
-				<section className=' min-h-screen'>
+
+				<section className=' h-screen'>
 					<Reason />
 				</section>
-				<section className=' min-h-screen'>
-					<CallToAction />
+				<section className=' h-screen'>
+					<CallToAction theme={theme} />
 				</section>
 			</div>
 		);

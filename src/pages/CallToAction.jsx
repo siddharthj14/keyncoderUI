@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from "../components/Footer";
 
-function CallToAction() {
+function CallToAction({theme}) {
   return (
     <div className="flex flex-col min-h-screen">
       <section className="mt-8 md:mt-16 flex-grow">
@@ -20,7 +20,7 @@ function CallToAction() {
           </div>
         </div>
       </section>
-      <Footer />
+      <Footer theme={theme} />
     </div>
   );
 }

@@ -49,20 +49,23 @@ function Courses() {
 	};
 
 	return (
-		<Slider {...settings}>
-			<div className='mx-auto w-full'>
-				<h3 className='text-center'>Course 1</h3>
-				<CourseCarousel />
-			</div>
-			<div className='mx-auto w-full'>
-				<h3 className='text-center'>Course 2</h3>
-				<CourseCarousel />
-			</div>
-			<div className='mx-auto w-full'>
-				<h3 className='text-center'>Course 3</h3>
-				<CourseCarousel />
-			</div>
-		</Slider>
+		<>
+			<h1 className="mb-[40px] mt-[300px] md:mt-[0] text-center font-bold text-[50px]">Our Courses</h1>
+			<Slider {...settings}>
+				<div className='mx-auto w-full'>
+					<h3 className='text-center'>Course 1</h3>
+					<CourseCarousel />
+				</div>
+				<div className='mx-auto w-full'>
+					<h3 className='text-center'>Course 2</h3>
+					<CourseCarousel />
+				</div>
+				<div className='mx-auto w-full'>
+					<h3 className='text-center'>Course 3</h3>
+					<CourseCarousel />
+				</div>
+			</Slider>
+		</>
 	);
 }
 

@@ -1,14 +1,14 @@
 function Reason() {
   return (
-    <section className="flex flex-col mt-[100px] items-center justify-center p-8 ">
-      <div className="text-center mb-[200px]">
+    <section className="flex flex-col items-center justify-center p-8 ">
+      <div className="text-center mb-[40px]">
         <h2 className="text-3xl font-bold mb-2">Why Choose KeyNcoder</h2>
         <p className="text-zinc-600">
           Lorem Ipsum courses we have? lorem ipsum
         </p>
       </div>
       <div className="flex justify-center items-center">
-        <div className="relative">
+        {/* <div className="relative">
           <img
             src="https://placehold.co/150"
             alt="Placeholder"
@@ -32,7 +32,8 @@ function Reason() {
           <p className="text-[30px] absolute top-0 left-[-250px] transform rotate-[-30px]">
             lorem ipsum <br /> lorem ipsum
           </p>
-        </div>
+        </div> */}
+        <img src="/src/assets/reasons.png" alt="" />
       </div>
     </section>
   );
