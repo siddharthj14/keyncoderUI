@@ -26,8 +26,8 @@ const Navbar = ({ theme, handleThemeSwitch }) => {
 						<img
 							src={`${
 								theme === "light"
-									? "../public/images/logo.png"
-									: "../public/images/logolight.png"
+									? "../images/logo.png"
+									: "../images/logolight.png"
 							}`}
 							alt=''
 							className='w-40 h-10'

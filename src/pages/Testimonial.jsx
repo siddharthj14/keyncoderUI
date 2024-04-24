@@ -6,7 +6,7 @@ export default function Testimonial() {
 		{
 			name: "Aaron Dessner",
 			company: "Microsoft",
-			image: "../public/images/pfp.jpg",
+			image: "../images/pfp.jpg",
 			logo: "https://developer.microsoft.com/_devcom/images/logo-ms-social.png",
 			testimony:
 				"Lorem Ipsum courses we have? lorem ipsum Loremdiorigh vodfjv idfjbvid dfjbvlsdjfvb sjdfvjsjdbfvkjsdfivsj sidjfsi isjdbfisbdfi sidjfbisjbdf isdjfbsijdffsd sdøjhsøjdhf sjdbfsjdfijs sdjfbisjdfsu sjdfsihjf ssdjhgfsø sdjf",
@@ -14,7 +14,7 @@ export default function Testimonial() {
 		{
 			name: "Jane Doe",
 			company: "Apple",
-			image: "../public/images/pfp.jpg",
+			image: "../images/pfp.jpg",
 			logo:
 				"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ0mpcTWy4WSOrDf5m5M1x4fCNM9VhpaHvMnOCDk8YNKeGlrC31yNo4RSomQ3mTojQuEw&usqp=CAU",
 			testimony:
