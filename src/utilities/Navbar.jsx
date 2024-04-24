@@ -4,6 +4,7 @@ import { faSun, faMoon } from "@fortawesome/free-regular-svg-icons";
 import Toggle from "./Toggle"; // Import the Toggle component
 import Sidebar from "./Sidebar";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const Navbar = ({ theme, handleThemeSwitch }) => {
   const [activeLink, setActiveLink] = useState(null);
@@ -82,9 +83,10 @@ const Navbar = ({ theme, handleThemeSwitch }) => {
 					</ul>
 					{/* Replace theme switch button with Toggle component */}
 					<Toggle toggled={theme === "dark"} onClick={handleThemeSwitch} />
+					<Link to="/login">
 					<button className='font-medium dark:text-white border-2 border-orange-500 rounded-lg px-4 py-2 hover:bg-orange-500 hover:text-white focus:outline-none'>
 						SignIn
-					</button>
+					</button></Link>
 				</span>
 				{isSidebarOpen && (
 					<Sidebar

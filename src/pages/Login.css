@@ -1,0 +1,8 @@
+.container1{
+    display: flex;
+    gap: 1rem;
+    width: 50%;
+}
+.left{
+    width: 50%;
+}
