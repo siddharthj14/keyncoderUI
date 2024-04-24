@@ -2,7 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import CourseCarousel from "../components/CourseCaraousel";
+import CourseCarousel from "../utilities/CourseCaraousel";
 
 function Courses() {
 	const settings = {
@@ -50,7 +50,9 @@ function Courses() {
 
 	return (
 		<>
-			<h1 className="mb-[40px] mt-[300px] md:mt-[0] text-center font-bold text-[50px]">Our Courses</h1>
+			<h1 className='mb-[40px] mt-[300px] md:mt-[0] text-center font-bold text-[50px]'>
+				Our Courses
+			</h1>
 			<Slider {...settings}>
 				<div className='mx-auto w-full'>
 					<h3 className='text-center'>Course 1</h3>

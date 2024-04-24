@@ -1,5 +1,5 @@
 // Testimonial.js
-import TestimonialCard from "../components/TestimonialCard";
+import TestimonialCard from "../utilities/TestimonialCard";
 
 export default function Testimonial() {
 	const testimonialData = [
