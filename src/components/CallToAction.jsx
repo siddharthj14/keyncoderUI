@@ -3,21 +3,30 @@ import Footer from "../utilities/Footer";
 
 function CallToAction({theme}) {
 	return (
-		<div className='flex flex-col min-h-screen'>
-			<section className='mt-8 md:mt-16 flex-grow'>
-				<h1 className='font-semibold text-2xl md:text-3xl text-center mt-[120px]'>
-					Companies Affiliated with <br /> keyNcoders
+		<div
+			className={`flex flex-col  ${
+				theme === "dark" ? "bg-[#131313]" : "bg-[#1d1534]"
+			} text-white`}>
+			<section className='flex-grow flex flex-col items-center min-h-[450px]'>
+				<h1 className='font-semibold text-2xl md:text-[50px] text-center text-[#E5E5E5]'>
+					Hiring Partners
 				</h1>
-				<p className='mt-4 text-base md:text-lg text-[#8A8A8A] text-center'>
+				<p className='mt-4 mb-24 text-base md:text-lg text-[#8A8A8A] text-center'>
 					Lorem Ipsum courses we have? lorem ipsum
 				</p>
-				<div className='w-full mt-8 md:mt-12 flex flex-col md:flex-row justify-center items-center md:items-stretch '>
-					<div className='h-[200px] md:h-[300px] w-[80%] md:w-[300px] bg-black text-white rounded-lg text-center mb-4 md:mb-0 md:mr-4'>
-						Company name/logo
-					</div>
-					<div className='h-[200px] md:h-[300px] w-[80%] md:w-[300px] bg-black text-white rounded-lg text-center'>
-						Company name/logo
-					</div>
+				<div className='flex justify-center mt-4 w-full h-[90px] dark:bg-[#645B5B] bg-white'>
+					<img
+						src='../images/companie.png'
+						alt='Companies'
+						className='object-cover w-full'
+					/>
+				</div>
+				<div className='flex justify-center mt-4 w-full h-[90px] dark:bg-[#645B5B] bg-white'>
+					<img
+						src='../images/companie.png'
+						alt='Companies'
+						className='object-cover w-full'
+					/>
 				</div>
 			</section>
 			<Footer theme={theme} />

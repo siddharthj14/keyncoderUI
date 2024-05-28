@@ -10,11 +10,14 @@ import React from "react";
 
 function Footer({theme}) {
 	return (
-		<footer className='text-zinc-600 body-font mt-4 md:mt-8'>
+		<footer className='text-white dark:text-zinc-600 body-font mt-4 md:mt-8'>
 			<div className='container mx-auto px-5'>
 				<div className='flex flex-col md:flex-row items-center justify-between'>
 					<p className='text-sm md:text-base text-center md:text-left dark:text-gray-400'>
-						©2024 <br /> keyNcoders
+						<span className='flex  items-center'>
+							<span className='text-[25px] mr-2'>©</span>2024
+						</span>
+						<br /> keyNcoders
 					</p>
 					<span className='inline-flex mt-2 md:mt-0'>
 						<a
@@ -27,45 +30,45 @@ function Footer({theme}) {
 				<hr className='w-full mt-3 bg-gray-300' />
 				<div className='flex flex-col md:flex-row items-center justify-between py-4'>
 					<p className='text-black font-bold text-base md:text-lg text-center md:text-left mb-4 md:mb-0'>
-						<img
-							src={`${
-								theme === "light" ? "../images/logo.png" : "../images/logolight.png"
-							}`}
-							alt=''
-							className='w-40 h-10'
-						/>
+						<img src='../images/logolight.png' alt='' className='w-40 h-10' />
 					</p>
-					<span className='flex flex-col md:flex-row gap-4 md:gap-8 dark:text-gray-400'>
+					<span className='flex flex-col md:flex-row justify-center items-center gap-4 md:gap-8 dark:text-gray-400'>
 						<a
 							href='#'
-							className='text-base md:text-lg text-[#120E0E] hover:text-[#111B47] dark:text-inherit'>
-							About us
+							className='text-base md:text-lg dark:text-gray-400 text-white'>
+							Product
 						</a>
 						<a
 							href='#'
-							className='text-base md:text-lg text-[#120E0E] hover:text-[#111B47] dark:text-inherit'>
-							Batches
+							className='text-base md:text-lg dark:text-gray-400 text-white'>
+							Community
 						</a>
 						<a
 							href='#'
-							className='text-base md:text-lg text-[#120E0E] hover:text-[#111B47] dark:text-inherit'>
-							Contact Us
+							className='text-base md:text-lg dark:text-gray-400 text-white'>
+							Support
 						</a>
 					</span>
-					<div className='flex flex-row gap-4 md:gap-8'>
+					<div className='flex flex-row gap-4 mt-2 md:m-0 md:gap-8'>
 						<FontAwesomeIcon
 							icon={faFacebook}
-							className='text-[#B0B8BC] h-5 md:h-6'
+							className='dark:text-[#B0B8BC] text-white h-5 md:h-6'
 						/>
 						<FontAwesomeIcon
 							icon={faLinkedin}
-							className='text-[#B0B8BC] h-5 md:h-6'
+							className='dark:text-[#B0B8BC] text-white h-5 md:h-6'
 						/>
-						<FontAwesomeIcon icon={faTwitter} className='text-[#B0B8BC] h-5 md:h-6' />
-						<FontAwesomeIcon icon={faYoutube} className='text-[#B0B8BC] h-5 md:h-6' />
+						<FontAwesomeIcon
+							icon={faTwitter}
+							className='dark:text-[#B0B8BC] text-white h-5 md:h-6'
+						/>
+						<FontAwesomeIcon
+							icon={faYoutube}
+							className='dark:text-[#B0B8BC] text-white h-5 md:h-6'
+						/>
 						<FontAwesomeIcon
 							icon={faInstagram}
-							className='text-[#B0B8BC] h-5 md:h-6'
+							className='dark:text-[#B0B8BC] text-white h-5 md:h-6'
 						/>
 					</div>
 				</div>

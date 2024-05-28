@@ -1,4 +1,3 @@
-import React, {useState, useEffect} from "react";
 import Navbar from "../utilities/Navbar";
 import Landing from "../components/Landing";
 import Courses from "../components/Courses";
@@ -7,43 +6,22 @@ import Reason from "../components/Reason";
 import CallToAction from "../components/CallToAction";
 import Testimonial from "../components/Testimonial";
 
-function PreLogin() {
-	const [theme, setTheme] = useState("light");
-
-	useEffect(() => {
-		if (theme === "dark") {
-			document.documentElement.classList.add("dark");
-		} else {
-			document.documentElement.classList.remove("dark");
-		}
-	}, [theme]);
-
-	const handleThemeSwitch = () => {
-		setTheme(theme === "dark" ? "light" : "dark");
-	};
-
+function PreLogin({theme, handleThemeSwitch}) {
 	return (
-		<div className='flex flex-col w-full h-full overflow-x-hidden bg-white text-black dark:bg-[#2E2727] dark:text-white'>
+		<div
+			className={`flex flex-col w-full h-full overflow-x-hidden ${
+				theme === "dark"
+					? "bg-[#131313] text-white"
+					: "bg-gradient-to-r from-[#ED374D] via-[#FA793F] to-[#FCB900] text-black"
+			}`}>
 			<Navbar handleThemeSwitch={handleThemeSwitch} theme={theme} />
-			<section className=' h-screen'>
-				<Landing />
-			</section>
-			<section className=' h-screen'>
-				<Courses />
-			</section>
-			<section className=' h-screen'>
+			<Landing theme={theme} />
+			<Courses theme={theme}>
 				<Testimonial />
-			</section>
-			<section className=' h-screen'>
-				<Mentors />
-			</section>
-
-			<section className=' h-screen'>
-				<Reason />
-			</section>
-			<section className=' h-screen'>
-				<CallToAction theme={theme} />
-			</section>
+			</Courses>
+			<Mentors />
+			<Reason theme={theme} />
+			<CallToAction theme={theme} />
 		</div>
 	);
 }
