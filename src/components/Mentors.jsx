@@ -2,7 +2,7 @@ import MentorCard from "../utilities/MentorCard";
 
 function Mentors() {
 	return (
-		<section className='max-h-full bg-[#1d1534] dark:bg-[#131313] '>
+		<section className=' pt-28 dark:pt-0 bg-[#1d1534] dark:bg-[#131313] '>
 			<h1 className='text-[50px] text-white font-bold md:text-5xl font-sans text-center'>
 				Our Mentors
 			</h1>

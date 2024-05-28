@@ -25,10 +25,10 @@ export default function Testimonial() {
 	return (
 		<>
 			
-			<h1 className=' text-center font-bold text-[50px] mt-20 mb-10'>
+			<h1 className=' text-center font-bold text-[50px] mt-28 mb-10'>
 				Our Testimonials
 			</h1>
-			<div className='flex flex-col flex-wrap justify-between md:flex-row md:mb-4'>
+			<div className='flex flex-col flex-wrap justify-between md:flex-row'>
 				{testimonialData.map((data, index) => (
 					<TestimonialCard
 						key={index}

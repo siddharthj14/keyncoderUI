@@ -91,7 +91,7 @@ function Courses({children,theme}) {
 					</div>
 				</Slider>
 				{children}
-				<div className='relative bottom-0'>
+				{theme==='dark'?<div className='relative'>
 					<svg
 						width='100%'
 						height='100%'
@@ -105,7 +105,8 @@ function Courses({children,theme}) {
 							fill={theme === "dark" ? "#131313" : "#1d1534"}
 							fillOpacity='1'></path>
 					</svg>
-				</div>
+				</div>:''}
+				
 			</section>
 		</>
 	);
