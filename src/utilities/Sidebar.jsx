@@ -8,6 +8,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import Toggle from "./Toggle";
+import { Link } from "react-router-dom";
 
 const Sidebar = ({
 	activeLink,
@@ -76,9 +77,11 @@ const Sidebar = ({
 						<FontAwesomeIcon icon={faGithub} />
 					</a>
 				</div>
+				<Link to='/login'>
 					<button className='font-medium mt-3 dark:text-white border-2 border-orange-500 rounded-lg px-4 py-2 hover:bg-orange-500 hover:text-white focus:outline-none'>
 						SignIn
 					</button>
+				</Link>
 			</div>
 		</div>
 	);

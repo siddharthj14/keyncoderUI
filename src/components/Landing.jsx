@@ -29,7 +29,7 @@ export default function Landing({theme}) {
 						</button>
 					</div>
 				</div>
-				<div className='mt-12 medium:mt-[100px]'>
+				<div className='mt-12 md:mt-[100px]'>
 					<img
 						src='../images/hero.png'
 						alt='Person pointing'
