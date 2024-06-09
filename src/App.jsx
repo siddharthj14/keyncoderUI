@@ -4,6 +4,7 @@ import ErrorPage from "./pages/ErrorPage";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import React, {useState, useEffect} from "react";
+import PostLogin from "./pages/PostLogin";
 
 const App = () => {
 	const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
@@ -31,6 +32,7 @@ const App = () => {
 					/>
 					<Route path='/login' element={<Login theme={theme} />} />
 					<Route path='/signup' element={<Signup />} />
+					<Route path='/courses' element={<PostLogin />} />
 					<Route path='*' element={<ErrorPage />} />
 				</Routes>
 			</BrowserRouter>

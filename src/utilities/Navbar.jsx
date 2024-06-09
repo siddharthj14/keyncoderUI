@@ -26,7 +26,7 @@ const Navbar = ({ theme, handleThemeSwitch }) => {
 					<span className='flex items-center gap-2'>
 						<img
 							src={`${
-								theme === "light" ? "../images/logo.png" : "../images/logolight.png"
+								theme === "light" ? "/images/logo.png" : "/images/logolight.png"
 							}`}
 							alt=''
 							className='w-40 h-10'
