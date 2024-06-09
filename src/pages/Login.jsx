@@ -74,7 +74,7 @@ function Login({theme}) {
 							className={`w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded-full ${
 								theme === "dark" ? "dark:bg-orange-600 dark:hover:bg-gray-600" : ""
 							}`}>
-							Register now
+							Login now
 						</button>
 						<p className='mt-4 text-center text-zinc-600 dark:text-[#A4A4A4]'>
 							Don't have an account?{" "}

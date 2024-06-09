@@ -30,9 +30,12 @@ const App = () => {
 						path='/'
 						element={<PreLogin theme={theme} handleThemeSwitch={handleThemeSwitch} />}
 					/>
+					<Route
+						path='/courses'
+						element={<PostLogin theme={theme} handleThemeSwitch={handleThemeSwitch} />}
+					/>
 					<Route path='/login' element={<Login theme={theme} />} />
 					<Route path='/signup' element={<Signup />} />
-					<Route path='/courses' element={<PostLogin />} />
 					<Route path='*' element={<ErrorPage />} />
 				</Routes>
 			</BrowserRouter>
