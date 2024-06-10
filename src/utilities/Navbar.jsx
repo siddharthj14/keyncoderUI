@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, {useState, useEffect, useRef} from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faSun, faMoon} from "@fortawesome/free-regular-svg-icons";
 import Toggle from "./Toggle"; // Import the Toggle component
@@ -10,6 +10,7 @@ const Navbar = ({theme, handleThemeSwitch}) => {
 	const [activeLink, setActiveLink] = useState(null);
 	const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 	const location = useLocation();
+	const navRef = useRef(null);
 
 	useEffect(() => {
 		// Set the active link based on the current path
@@ -28,6 +29,21 @@ const Navbar = ({theme, handleThemeSwitch}) => {
 		}
 	}, [location.pathname]);
 
+	useEffect(() => {
+		// Close sidebar when clicking outside
+		const handleOutsideClick = (event) => {
+			if (navRef.current && !navRef.current.contains(event.target)) {
+				setIsSidebarOpen(false);
+			}
+		};
+
+		document.addEventListener("click", handleOutsideClick);
+
+		return () => {
+			document.removeEventListener("click", handleOutsideClick);
+		};
+	}, []);
+
 	const handleLinkClick = () => {
 		setIsSidebarOpen(false); // Close the sidebar after clicking a link
 	};
@@ -37,7 +53,9 @@ const Navbar = ({theme, handleThemeSwitch}) => {
 	};
 
 	return (
-		<nav className='fixed z-[9999] flex flex-col small:flex-row justify-between items-center backdrop-blur-md h-auto small:h-16 px-8 my-2 mt-0 w-full bg-[#E6E6E6] dark:bg-[#232222]'>
+		<nav
+			ref={navRef}
+			className='fixed z-[9999] flex flex-col small:flex-row justify-between items-center backdrop-blur-md h-auto small:h-16 px-8 my-2 mt-0 w-full bg-[#E6E6E6] dark:bg-[#232222]'>
 			<div className='flex items-center justify-between w-full small:w-auto'>
 				<span className='flex items-center gap-2'>
 					<Link to='/'>
@@ -54,7 +72,10 @@ const Navbar = ({theme, handleThemeSwitch}) => {
 					{isSidebarOpen ? (
 						<FontAwesomeIcon icon={faXmark} />
 					) : (
-						<FontAwesomeIcon icon={faBars} className='text-[30px]' />
+						<FontAwesomeIcon
+							icon={faBars}
+							className='text-[30px] dark:text-gray-300'
+						/>
 					)}
 				</span>
 			</div>

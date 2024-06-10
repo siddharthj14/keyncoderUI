@@ -46,7 +46,7 @@ const Sidebar = ({
 				</li>
 				<li>
 					<Link
-						to='/contact'
+						to='/contact-us'
 						className={`flex justify-between items-center p-2 hover:bg-zinc-700 rounded ${
 							activeLink === 2 ? "bg-zinc-700" : ""
 						}`}>
