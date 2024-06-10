@@ -13,7 +13,7 @@ function AboutUs({handleThemeSwitch, theme}) {
 		<>
 			<Navbar handleThemeSwitch={handleThemeSwitch} theme={theme} />
 			<section
-				className={`bg-[#D9D9D9] dark:bg-[#1a1a1a] md:min-h-screen p-10 md:p-20`}>
+				className={`bg-[#D9D9D9] dark:bg-[#1a1a1a] min-h-screen p-10 md:p-20`}>
 				<h1 className='text-gray-700 dark:text-gray-300 text-[40px] md:text-[85px] text-center font-bold mt-20 md:mt-40 mb-4'>
 					Revolutionizing Education
 				</h1>
