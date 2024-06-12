@@ -3,6 +3,7 @@ import PreLogin from "./pages/PreLogin";
 import ErrorPage from "./pages/ErrorPage";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
+import Batches from "./pages/Batches";
 import React, {useState, useEffect} from "react";
 import PostLogin from "./pages/PostLogin";
 
@@ -29,6 +30,10 @@ const App = () => {
 					<Route
 						path='/'
 						element={<PreLogin theme={theme} handleThemeSwitch={handleThemeSwitch} />}
+					/>
+					<Route
+						path='/Batches'
+						element={<Batches theme={theme} handleThemeSwitch={handleThemeSwitch} />}
 					/>
 					<Route
 						path='/courses'

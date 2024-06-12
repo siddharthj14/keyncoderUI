@@ -55,16 +55,17 @@ const Navbar = ({ theme, handleThemeSwitch }) => {
 							</a>
 						</li>
 						<li>
-							<a
-								href='#batches'
-								className={`font-medium dark:text-white ${
-									activeLink === 1
-										? "text-orange-600 underline decoration-2 decoration-orange-400 underline-offset-8"
-										: ""
-								} hover:text-orange-600`}
-								onClick={(event) => handleLinkClick(1, event)}>
-								Batches
-							</a>
+						<Link
+                                   to='/batches' 
+                                       className={`font-medium dark:text-white ${
+                                    activeLink === 1
+                                           ? "text-orange-600 underline decoration-2 decoration-orange-400 underline-offset-8"
+                                                          : ""
+                                          } hover:text-orange-600`}
+                                onClick={(event) => handleLinkClick(1, event)}>
+                                              Batches
+                        </Link>
+
 						</li>
 						<li>
 							<a
