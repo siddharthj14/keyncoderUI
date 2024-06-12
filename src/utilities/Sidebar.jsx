@@ -27,34 +27,31 @@ const Sidebar = ({
 			</div>
 			<ul className='flex flex-grow flex-col p-5 space-y-2'>
 				<li>
-					<a
-						href='#'
+					<Link
+						to='/about'
 						className={`flex justify-between items-center p-2 hover:bg-zinc-700 rounded ${
 							activeLink === 0 ? "bg-zinc-700" : ""
-						}`}
-						onClick={(event) => handleLinkClick(0, event)}>
+						}`}>
 						About Us <span>▼</span>
-					</a>
+					</Link>
 				</li>
 				<li>
-					<a
-						href='#'
+					<Link
+						to='/courses'
 						className={`flex justify-between items-center p-2 hover:bg-zinc-700 rounded ${
 							activeLink === 1 ? "bg-zinc-700" : ""
-						}`}
-						onClick={(event) => handleLinkClick(1, event)}>
+						}`}>
 						Batches <span>▼</span>
-					</a>
+					</Link>
 				</li>
 				<li>
-					<a
-						href='#'
+					<Link
+						to='/contact-us'
 						className={`flex justify-between items-center p-2 hover:bg-zinc-700 rounded ${
 							activeLink === 2 ? "bg-zinc-700" : ""
-						}`}
-						onClick={(event) => handleLinkClick(2, event)}>
+						}`}>
 						Contact Us <span>▼</span>
-					</a>
+					</Link>
 				</li>
 				<li className='flex flex-row'>
 					Theme: <Toggle toggled={theme === "dark"} onClick={handleThemeSwitch} />

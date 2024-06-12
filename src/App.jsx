@@ -6,6 +6,8 @@ import Signup from "./pages/Signup";
 import Batches from "./pages/Batches";
 import React, {useState, useEffect} from "react";
 import PostLogin from "./pages/PostLogin";
+import AboutUs from "./pages/AboutUs";
+import ContactUs from "./pages/ContactUs";
 
 const App = () => {
 	const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
@@ -37,10 +39,22 @@ const App = () => {
 					/>
 					<Route
 						path='/courses'
-						element={<PostLogin theme={theme} handleThemeSwitch={handleThemeSwitch} />}
+						element={
+							<PostLogin theme={theme} handleThemeSwitch={handleThemeSwitch} />
+						}
 					/>
 					<Route path='/login' element={<Login theme={theme} />} />
 					<Route path='/signup' element={<Signup />} />
+					<Route
+						path='/about'
+						element={<AboutUs handleThemeSwitch={handleThemeSwitch} theme={theme} />}
+					/>
+					<Route
+						path='/contact-us'
+						element={
+							<ContactUs handleThemeSwitch={handleThemeSwitch} theme={theme} />
+						}
+					/>
 					<Route path='*' element={<ErrorPage />} />
 				</Routes>
 			</BrowserRouter>
