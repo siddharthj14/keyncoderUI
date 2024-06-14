@@ -14,12 +14,12 @@ export default function Landing({theme}) {
 			}>
 			<div className='mx-10 md:mx-12 mt-8 md:mt-16 p-6 md:p-12 flex flex-col medium:flex-row items-center justify-between'>
 				<div className='space-y-6 md:space-y-10'>
-					<h1 className='text-3xl leading-[1.1] md:text-5xl md:leading-[1.3] font-bold text-zinc-900 dark:text-white'>
+					<h1 className='text-4xl pt-8 leading-[1.1] md:text-5xl md:leading-[1.3] font-bold text-zinc-900 dark:text-white'>
 						Unlock your
 						<br />
 						Knowledge
 					</h1>
-					<p className='text-white dark:text-[#A4A4A4] text-[28px] max-w-lg'>
+					<p className='text-white dark:text-[#A4A4A4] md:text-[28px] max-w-lg'>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pharetra,
 						phasellus imperdiet fringilla turpis lectus risus erat. Commodo purus, eu
 						sed suspendisse fermentum.
