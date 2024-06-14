@@ -3,7 +3,7 @@ import React from "react";
 const PostloginCard = ({ theme }) => {
   return (
     <div
-      className={`mt-20 w-[40rem] flex items-center justify-between rounded-3xl mx-8 pl-8 ${
+      className={`mt-20 mr-20 w-[40rem] flex items-center justify-between rounded-3xl mx-8 pl-8 ${
         theme == "dark"
           ? "bg-[url('../images/Rectangle.png')]"
           : "bg-gradient-to-r from-[#FCB900] via-[#FA793F] to-[#ED374D]  hover:from-[#ED374D] hover:via-[#FA793F] hover:to-[#FCB900] "

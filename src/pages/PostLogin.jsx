@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../utilities/Navbar";
 import PostloginCard from "../components/PostloginCard";
+import CustomCalendar from "../components/CustomCalendar";
 
 const PostLogin = ({ theme, handleThemeSwitch }) => {
   return (
@@ -10,7 +11,11 @@ const PostLogin = ({ theme, handleThemeSwitch }) => {
       }`}
     >
       <Navbar handleThemeSwitch={handleThemeSwitch} theme={theme} />
+      <div className="flex ">
+
       <PostloginCard theme={theme} />
+      <CustomCalendar theme={theme}/>
+      </div>
     </div>
   );
 };
