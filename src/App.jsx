@@ -8,6 +8,8 @@ import React, {useState, useEffect} from "react";
 import PostLogin from "./pages/PostLogin";
 import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
+import DsaCourse from "./pages/DsaCourse";
+import NextjsCourse from "./pages/NextjsCourse";
 
 const App = () => {
 	const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
@@ -43,6 +45,19 @@ const App = () => {
 							<PostLogin theme={theme} handleThemeSwitch={handleThemeSwitch} />
 						}
 					/>
+					<Route
+						path='/dsa'
+						element={
+							<DsaCourse theme={theme} handleThemeSwitch={handleThemeSwitch} />
+						}
+					/>
+					<Route
+						path='/nextjs'
+						element={
+							<NextjsCourse theme={theme} handleThemeSwitch={handleThemeSwitch} />
+						}
+					/>
+					
 					<Route path='/login' element={<Login theme={theme} />} />
 					<Route path='/signup' element={<Signup />} />
 					<Route

@@ -1,10 +1,10 @@
 import Navbar from "../utilities/Navbar";
-import Offered_courses from "../components/Starting_courses";
+import Dsacourse from "../components/Dsacourse";
 import Instructors from "../components/Instructors";
 import StudentsReview from "../components/StudentsReview";
 import Footer1 from "../utilities/Footer";
 
-function Batches({theme, handleThemeSwitch}) {
+function DsaCourse({theme, handleThemeSwitch}) {
 	return (
 		<div
 			className={`flex flex-col w-full h-full overflow-x-hidden ${
@@ -13,12 +13,11 @@ function Batches({theme, handleThemeSwitch}) {
 					: "bg-gradient-to-r from-[#ED374D] via-[#FA793F] to-[#FCB900] text-black"
 			}`}>
 			<Navbar handleThemeSwitch={handleThemeSwitch} theme={theme} />
-			<Offered_courses theme={theme} />
-			<Instructors theme={theme}  />
-			<StudentsReview theme={theme} />
-			<Footer1 theme={theme} />
+			<Dsacourse theme={theme} />
 		</div>
 	);
 }
 
-export default Batches;
+export default DsaCourse;
+
+

@@ -5,7 +5,7 @@ import StartingCourseCard from "../utilities/StartingCourseCard.jsx";
 export default function Starting_courses() {
 	const testimonialData = [
 		{
-			name: "Next Js",
+			name: "NextJs",
 			image: "../images/Nextjs.png",
 			logo: "https://developer.microsoft.com/_devcom/images/logo-ms-social.png",
 			testimony1:
