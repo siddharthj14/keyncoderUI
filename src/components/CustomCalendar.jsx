@@ -16,6 +16,8 @@ const CustomCalendar = ({ theme }) => {
     },
   ]);
 
+  const [currentDate, setCurrentDate] = useState(new Date(2024, 4, 15));
+
   const onEventDrop = ({ event, start, end }) => {
     const updatedEvents = events.map((existingEvent) =>
       existingEvent.title === event.title
@@ -25,8 +27,18 @@ const CustomCalendar = ({ theme }) => {
     setEvents(updatedEvents);
   };
 
+  const onNavigate = (date) => {
+    setCurrentDate(date);
+  };
+
   return (
-    <div className={`text-black calendar-container mt-20 ml-10 rounded-3xl overflow-x-hidden ${theme === "dark" ? "bg-black text-white" : "bg-gradient-to-r from-[#FA5D2C] via-[#f0663d] to-[#e87657]"}`}>
+    <div
+      className={`text-black calendar-container mt-20 ml-10 rounded-3xl overflow-x-hidden ${
+        theme === "dark"
+          ? "bg-black text-white"
+          : "bg-gradient-to-r from-[#FA5D2C] via-[#f0663d] to-[#e87657]"
+      }`}
+    >
       <DndProvider backend={HTML5Backend}>
         <Calendar
           localizer={localizer}
@@ -42,12 +54,13 @@ const CustomCalendar = ({ theme }) => {
           style={{ height: "40vh", width: "45vw" }}
           onEventDrop={onEventDrop}
           draggableAccessor={() => true}
-          defaultDate={new Date(2024, 4, 15)} // Ensure default date is within min and max range
+          defaultDate={new Date(2024, 4, 15)}
+          onNavigate={onNavigate}
           components={{
-            toolbar: CustomToolbar,
+            toolbar: (props) => <CustomToolbar {...props} currentDate={currentDate} />,
           }}
           eventPropGetter={() => ({
-            className: 'dark:bg-[#FA5D2C]  rounded-2xl bg-[#ac3713]',
+            className: "dark:bg-[#FA5D2C] rounded-2xl bg-[#ac3713]",
           })}
         />
       </DndProvider>
@@ -55,28 +68,34 @@ const CustomCalendar = ({ theme }) => {
   );
 };
 
-const CustomToolbar = (toolbar) => {
+const CustomToolbar = ({ onNavigate, label, currentDate }) => {
   const goToBack = () => {
-    toolbar.onNavigate("PREV");
+    onNavigate("PREV");
   };
 
   const goToNext = () => {
-    toolbar.onNavigate("NEXT");
+    onNavigate("NEXT");
   };
 
   const goToCurrent = () => {
-    toolbar.onNavigate("TODAY");
+    onNavigate("TODAY");
   };
 
   return (
     <div className="rbc-toolbar bg-[#FDE4DD] rounded-t-lg p-2 overflow-hidden">
       <span className="rbc-btn-group ml-5 mt-2">
-        <button className="bg-blue-500 text-white px-2 py-1 rounded" onClick={goToBack}>Back</button>
-        <button className="bg-blue-500 text-white px-2 py-1 rounded" onClick={goToCurrent}>Today</button>
-        <button className="bg-blue-500 text-white px-2 py-1 rounded" onClick={goToNext}>Next</button>
+        <button className="bg-blue-500 text-white px-2 py-1 rounded" onClick={goToBack}>
+          Back
+        </button>
+        <button className="bg-blue-500 text-white px-2 py-1 rounded" onClick={goToCurrent}>
+          Today
+        </button>
+        <button className="bg-blue-500 text-white px-2 py-1 rounded" onClick={goToNext}>
+          Next
+        </button>
       </span>
       <span className="rbc-toolbar-label text-black">
-        {moment(toolbar.date).format("MMMM Do YYYY")}
+        {moment(currentDate).format("MMMM Do YYYY")}
       </span>
     </div>
   );

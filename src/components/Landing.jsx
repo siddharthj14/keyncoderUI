@@ -41,8 +41,7 @@ export default function Landing({theme}) {
 						className='max-w-xs medium:max-w-lg m-6 medium:m-2 rounded-lg shadow-lg'
 					/>
 				</div>
-			</div>
-			<div className='relative'>
+				<div className='relative'>
 				<svg
 					width='100%'
 					height='100%'
@@ -64,6 +63,7 @@ export default function Landing({theme}) {
 						fill={theme === "dark" ? "url(#gradient)" : "#1D1534"}
 						fillOpacity='1'></path>
 				</svg>
+				</div>
 			</div>
 		</div>
 	);

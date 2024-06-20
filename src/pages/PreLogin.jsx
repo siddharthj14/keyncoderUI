@@ -17,7 +17,7 @@ function PreLogin({theme, handleThemeSwitch}) {
 			<Navbar handleThemeSwitch={handleThemeSwitch} theme={theme} />
 			<Landing theme={theme} />
 			<Courses theme={theme}>
-				<Testimonial />
+			   <Testimonial />
 			</Courses>
 			<Mentors />
 			<Reason theme={theme} />
