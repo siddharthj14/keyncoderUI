@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
+// import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
 import footer from '../utilities/Footer';
 
 export default function Landing({ theme }) {
