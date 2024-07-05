@@ -10,6 +10,7 @@ import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
 import DsaCourse from "./pages/DsaCourse";
 import NextjsCourse from "./pages/NextjsCourse";
+import Videos from "./utilities/Videos";
 
 const App = () => {
 	const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
@@ -69,6 +70,10 @@ const App = () => {
 						element={
 							<ContactUs handleThemeSwitch={handleThemeSwitch} theme={theme} />
 						}
+					/>
+					<Route
+						path='/videos'
+						element={<Videos theme={theme} handleThemeSwitch={handleThemeSwitch} />}
 					/>
 					<Route path='*' element={<ErrorPage />} />
 				</Routes>
