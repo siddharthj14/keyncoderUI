@@ -22,7 +22,7 @@ const Sidebar = () => {
     { name: 'Module5', videos: [{title: 'chapter 1', link: 'https://www.youtube.com/watch?v=xyz9'}, {title: 'chapter 2', link: 'https://www.youtube.com/watch?v=xyza'},{title: 'Chapter 3', link: 'https://www.youtube.com/watch?v=xyz2'},{title: 'Chapter 4', link: 'https://www.youtube.com/watch?v=xyz2'}] },
     { name: 'Module6', videos: [{title: 'chapter 1', link: 'https://www.youtube.com/watch?v=xyzb'}, {title: 'chapter 2', link: 'https://www.youtube.com/watch?v=xyzc'},{title: 'Chapter 3', link: 'https://www.youtube.com/watch?v=xyz2'},{title: 'Chapter 4', link: 'https://www.youtube.com/watch?v=xyz2'}] },
     { name: 'Module7', videos: [{title: 'chapter 1', link: 'https://www.youtube.com/watch?v=xyzb'}, {title: 'chapter 2', link: 'https://www.youtube.com/watch?v=xyzc'},{title: 'Chapter 3', link: 'https://www.youtube.com/watch?v=xyz2'},{title: 'Chapter 4', link: 'https://www.youtube.com/watch?v=xyz2'}] },
-    { name: 'Module8', videos: [{title: 'chapter 1', link: 'https://www.youtube.com/watch?v=xyzb'}, {title: 'chapter 2', link: 'https://www.youtube.com/watch?v=xyzc'},{title: 'Chapter 3', link: 'https://www.youtube.com/watch?v=xyz2'},{title: 'Chapter 4', link: 'https://www.youtube.com/watch?v=xyz2'}] }
+    { name: 'Module8', videos: [{title: 'chapter 1', link: 'https://www.youtube.com/'}, {title: 'chapter 2', link: 'https://www.youtube.com/watch?v=xyzc'},{title: 'Chapter 3', link: 'https://www.youtube.com/watch?v=xyz2'},{title: 'Chapter 4', link: 'https://www.youtube.com/watch?v=xyz2'}] }
   ];
 
   useEffect(() => {
