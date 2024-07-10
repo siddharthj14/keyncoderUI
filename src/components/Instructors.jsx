@@ -46,28 +46,28 @@ export default function Instructors() {
 
 	return (
 		<>
-    <h1 className='text-start font-bold text-[25px] mt-5 mb-5 ml-[5%]'>
-        Popular Instructors
-    </h1>
-    <div className='overflow-x-auto'>
-        <div className='grid grid-flow-col auto-cols-max gap-4 p-4'>
-            {testimonialData.map((data, index) => (
-                <InstructorCard
-                    key={index}
-                    name={data.name}
-					surname={data.surname}
-                    image={data.image}
-                    logo={data.logo}
-                    testimony={data.testimony}
-                    educator={data.educator}
-					reviews={data.reviews}
-					Students={data.Students}
-					Courses={data.Courses}
-                />
-            ))}
-        </div>
-    </div>
-</>
-
-    );
+			<h1 className='text-start font-bold text-[25px] mt-5 mb-5 ml-[5%]'>
+				Popular Instructors
+			</h1>
+			<div className='overflow-x-hidden'>
+				<div className='flex flex-wrap justify-evenly gap-4 p-4'>
+					{testimonialData.map((data, index) => (
+						<div key={index} className='md:w-[600px] md:flex-shrink-0'>
+							<InstructorCard
+								name={data.name}
+								surname={data.surname}
+								image={data.image}
+								logo={data.logo}
+								testimony={data.testimony}
+								educator={data.educator}
+								reviews={data.reviews}
+								Students={data.Students}
+								Courses={data.Courses}
+							/>
+						</div>
+					))}
+				</div>
+			</div>
+		</>
+	);
 }

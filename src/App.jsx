@@ -1,16 +1,18 @@
-import {BrowserRouter, Routes, Route} from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import PreLogin from "./pages/PreLogin";
 import ErrorPage from "./pages/ErrorPage";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Batches from "./pages/Batches";
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import PostLogin from "./pages/PostLogin";
 import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
 import DsaCourse from "./pages/DsaCourse";
 import NextjsCourse from "./pages/NextjsCourse";
 import Videos from "./utilities/Videos";
+import Mentor from "./pages/Mentor";
+import MentorProfile from "./pages/MentorProfile.jsx";
 
 const App = () => {
 	const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
@@ -58,7 +60,7 @@ const App = () => {
 							<NextjsCourse theme={theme} handleThemeSwitch={handleThemeSwitch} />
 						}
 					/>
-					
+
 					<Route path='/login' element={<Login theme={theme} />} />
 					<Route path='/signup' element={<Signup />} />
 					<Route
@@ -74,6 +76,16 @@ const App = () => {
 					<Route
 						path='/videos'
 						element={<Videos theme={theme} handleThemeSwitch={handleThemeSwitch} />}
+					/>
+					<Route
+						path='/mentors'
+						element={<Mentor theme={theme} handleThemeSwitch={handleThemeSwitch} />}
+					/>
+					<Route
+						path='/mentor-profile/:mentorName'
+						element={
+							<MentorProfile theme={theme} handleThemeSwitch={handleThemeSwitch} />
+						}
 					/>
 					<Route path='*' element={<ErrorPage />} />
 				</Routes>
