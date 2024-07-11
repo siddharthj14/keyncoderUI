@@ -57,7 +57,9 @@ const CustomCalendar = ({ theme }) => {
           defaultDate={new Date(2024, 4, 15)}
           onNavigate={onNavigate}
           components={{
-            toolbar: (props) => <CustomToolbar {...props} currentDate={currentDate} />,
+            toolbar: (props) => (
+              <CustomToolbar {...props} currentDate={currentDate} />
+            ),
           }}
           eventPropGetter={() => ({
             className: "dark:bg-[#FA5D2C] rounded-2xl bg-[#ac3713]",
@@ -84,13 +86,22 @@ const CustomToolbar = ({ onNavigate, label, currentDate }) => {
   return (
     <div className="rbc-toolbar bg-[#FDE4DD] rounded-t-lg p-2 overflow-hidden">
       <span className="rbc-btn-group ml-5 mt-2">
-        <button className="bg-blue-500 text-white px-2 py-1 rounded" onClick={goToBack}>
+        <button
+          className="bg-blue-500 text-white px-2 py-1 rounded"
+          onClick={goToBack}
+        >
           Back
         </button>
-        <button className="bg-blue-500 text-white px-2 py-1 rounded" onClick={goToCurrent}>
+        <button
+          className="bg-blue-500 text-white px-2 py-1 rounded"
+          onClick={goToCurrent}
+        >
           Today
         </button>
-        <button className="bg-blue-500 text-white px-2 py-1 rounded" onClick={goToNext}>
+        <button
+          className="bg-blue-500 text-white px-2 py-1 rounded"
+          onClick={goToNext}
+        >
           Next
         </button>
       </span>

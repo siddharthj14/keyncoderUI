@@ -11,9 +11,16 @@ const PostloginCard = ({ theme }) => {
     >
       <div>
         <h3 className="text-2xl text-white">Hi Sara</h3>
-        <h1 className="text-4xl font-semibold" >Get started with <span className={theme == "dark" ? "text-[#FA793F]" : "text-white"}>Coding</span></h1>
+        <h1 className="text-4xl font-semibold">
+          Get started with{" "}
+          <span className={theme == "dark" ? "text-[#FA793F]" : "text-white"}>
+            Coding
+          </span>
+        </h1>
         <p className="text-base text-white">The most intuitive platform</p>
-        <button className="text-xl bg-[#FA793F] p-2 rounded-xl text-white font-semibold mt-8">Continue</button>
+        <button className="text-xl bg-[#FA793F] p-2 rounded-xl text-white font-semibold mt-8">
+          Continue
+        </button>
       </div>
       <div>
         <img src="../images/human.png" alt="Person pointing" />

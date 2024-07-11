@@ -5,7 +5,7 @@ import { Link, useLocation } from "react-router-dom";
 import Toggle from "./Toggle"; // Import the Toggle component
 import Sidebar from "./Sidebar";
 
-const Navbar = ({ theme, handleThemeSwitch }) => {
+const PostloginNavbar = ({ theme, handleThemeSwitch }) => {
   const [activeLink, setActiveLink] = useState(null);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const location = useLocation();
@@ -14,13 +14,13 @@ const Navbar = ({ theme, handleThemeSwitch }) => {
   useEffect(() => {
     // Set the active link based on the current path
     switch (location.pathname) {
-      case "/about":
+      case "/my-batches":
         setActiveLink(0);
         break;
-      case "/batches":
+      case "/job-alerts":
         setActiveLink(1);
         break;
-      case "/contact-us":
+      case "/mentor-connect":
         setActiveLink(2);
         break;
       default:
@@ -58,7 +58,7 @@ const Navbar = ({ theme, handleThemeSwitch }) => {
     >
       <div className="flex items-center justify-between w-full small:w-auto">
         <span className="flex items-center gap-2">
-          <Link to="/">
+          <Link to="/user-postlogin">
             <img
               src={
                 theme === "light" ? "/images/logo.png" : "/images/logolight.png"
@@ -80,7 +80,7 @@ const Navbar = ({ theme, handleThemeSwitch }) => {
         <ul className="flex gap-7">
           <li>
             <Link
-              to="/about"
+              to="/my-batches"
               className={`font-medium dark:text-white ${
                 activeLink === 0
                   ? "text-orange-600 underline decoration-2 decoration-orange-400 underline-offset-8"
@@ -88,12 +88,12 @@ const Navbar = ({ theme, handleThemeSwitch }) => {
               } hover:text-orange-600`}
               onClick={handleLinkClick}
             >
-              About us
+              My Batches
             </Link>
           </li>
           <li>
             <Link
-              to="/batches"
+              to="/job-alerts"
               className={`font-medium dark:text-white ${
                 activeLink === 1
                   ? "text-orange-600 underline decoration-2 decoration-orange-400 underline-offset-8"
@@ -101,12 +101,12 @@ const Navbar = ({ theme, handleThemeSwitch }) => {
               } hover:text-orange-600`}
               onClick={handleLinkClick}
             >
-              Batches
+              Job Alerts
             </Link>
           </li>
           <li>
             <Link
-              to="/contact-us"
+              to="/mentor-connect"
               className={`font-medium dark:text-white ${
                 activeLink === 2
                   ? "text-orange-600 underline decoration-2 decoration-orange-400 underline-offset-8"
@@ -114,15 +114,15 @@ const Navbar = ({ theme, handleThemeSwitch }) => {
               } hover:text-orange-600`}
               onClick={handleLinkClick}
             >
-              Contact Us
+              Mentor Connect
             </Link>
           </li>
         </ul>
         {/* Replace theme switch button with Toggle component */}
         <Toggle toggled={theme === "dark"} onClick={handleThemeSwitch} />
-        <Link to="/login">
+        <Link to="/">
           <button className="font-medium dark:text-white border-2 border-orange-500 rounded-lg px-4 py-2 hover:bg-orange-500 hover:text-white focus:outline-none">
-            SignIn
+            Logout
           </button>
         </Link>
       </span>
@@ -139,4 +139,4 @@ const Navbar = ({ theme, handleThemeSwitch }) => {
   );
 };
 
-export default Navbar;
+export default PostloginNavbar;

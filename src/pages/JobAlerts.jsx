@@ -1,6 +1,7 @@
 import React from "react";
+import PostloginNavbar from "../utilities/PostloginNavbar";
 
-const NextjsCourse = () => {
+const JobAlerts = () => {
   return (
     <div
       className={`flex flex-col w-full h-full overflow-x-hidden ${
@@ -9,10 +10,10 @@ const NextjsCourse = () => {
           : "bg-gradient-to-r from-[#ED374D] via-[#FA793F] to-[#FCB900] text-black"
       }`}
     >
-      <Navbar handleThemeSwitch={handleThemeSwitch} theme={theme} />
-      <Dsacourse theme={theme} />
+      <PostloginNavbar handleThemeSwitch={handleThemeSwitch} theme={theme} />
+      Job Alerts
     </div>
   );
 };
 
-export default NextjsCourse;
+export default JobAlerts;

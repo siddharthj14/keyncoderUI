@@ -6,24 +6,25 @@ import Reason from "../components/Reason";
 import CallToAction from "../components/CallToAction";
 import Testimonial from "../components/Testimonial";
 
-function PreLogin({theme, handleThemeSwitch}) {
-	return (
-		<div
-			className={`flex flex-col w-full h-full overflow-x-hidden${
-				theme === "dark"
-					? "bg-[#1D1534] text-white"
-					: "bg-gradient-to-r from-[#ED374D] via-[#FA793F] to-[#FCB900] text-black"
-			}`}>
-			<Navbar handleThemeSwitch={handleThemeSwitch} theme={theme} />
-			<Landing theme={theme} />
-			<Courses theme={theme}>
-			   <Testimonial />
-			</Courses>
-			<Mentors />
-			<Reason theme={theme} />
-			<CallToAction theme={theme} />
-		</div>
-	);
+function PreLogin({ theme, handleThemeSwitch }) {
+  return (
+    <div
+      className={`flex flex-col w-full h-full overflow-x-hidden${
+        theme === "dark"
+          ? "bg-[#1D1534] text-white"
+          : "bg-gradient-to-r from-[#ED374D] via-[#FA793F] to-[#FCB900] text-black"
+      }`}
+    >
+      <Navbar handleThemeSwitch={handleThemeSwitch} theme={theme} />
+      <Landing theme={theme} />
+      <Courses theme={theme}>
+        <Testimonial />
+      </Courses>
+      <Mentors />
+      <Reason theme={theme} />
+      <CallToAction theme={theme} />
+    </div>
+  );
 }
 
 export default PreLogin;

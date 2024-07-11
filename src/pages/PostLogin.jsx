@@ -4,6 +4,7 @@ import PostloginCard from "../components/PostloginCard";
 import CustomCalendar from "../components/CustomCalendar";
 import Statistics from "../components/Statistics";
 import CircularProgress from "../components/CircularProgress";
+import PostloginNavbar from "../utilities/PostloginNavbar";
 
 const PostLogin = ({ theme, handleThemeSwitch }) => {
   return (
@@ -12,7 +13,7 @@ const PostLogin = ({ theme, handleThemeSwitch }) => {
         theme === "dark" ? "bg-[#131313] text-white" : "bg-white text-black"
       }`}
     >
-      <Navbar handleThemeSwitch={handleThemeSwitch} theme={theme} />
+      <PostloginNavbar handleThemeSwitch={handleThemeSwitch} theme={theme} />
       <div className="flex flex-col">
         <div className="flex">
           <PostloginCard theme={theme} />
@@ -21,8 +22,9 @@ const PostLogin = ({ theme, handleThemeSwitch }) => {
         <div className="flex">
           <Statistics theme={theme} />
           <div className="flex flex-col">
-          <CircularProgress label="Productivity" value="90"/>
-          <CircularProgress label="Quiz" value="75"/></div>
+            <CircularProgress label="Productivity" value="90" />
+            <CircularProgress label="Quiz" value="75" />
+          </div>
         </div>
       </div>
     </div>

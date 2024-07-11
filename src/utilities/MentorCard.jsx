@@ -2,15 +2,18 @@ function MentorCard() {
   return (
     <div>
       <div className="w-[400px] mx-auto overflow-hidden bg-[#E7E4E4] rounded-lg shadow-lg dark:bg-[#4E4848]">
-      <div className="h-24 w-24 md:h-32 md:w-32 mt-2 mx-auto rounded-full overflow-hidden" style={{  border:"5px solid black" }}>
-  <img 
-    className="h-full w-full object-cover "
-    src="https://d19d5sz0wkl0lu.cloudfront.net/dims4/default/0c8a0a3/2147483647/thumbnail/1000x1000%3E/quality/90/?url=https:%2F%2Fatd-brightspot.s3.amazonaws.com%2F7f%2F38%2Fb37d0d6148e48fea8f76209eb3bb%2Fbigstock-pretty-teacher-smiling-at-came-69887626-1.jpg"
-    alt=""
-  />
-</div>
+        <div
+          className="h-24 w-24 md:h-32 md:w-32 mt-2 mx-auto rounded-full overflow-hidden"
+          style={{ border: "5px solid black" }}
+        >
+          <img
+            className="h-full w-full object-cover "
+            src="https://d19d5sz0wkl0lu.cloudfront.net/dims4/default/0c8a0a3/2147483647/thumbnail/1000x1000%3E/quality/90/?url=https:%2F%2Fatd-brightspot.s3.amazonaws.com%2F7f%2F38%2Fb37d0d6148e48fea8f76209eb3bb%2Fbigstock-pretty-teacher-smiling-at-came-69887626-1.jpg"
+            alt=""
+          />
+        </div>
 
-        <div className="px-6 py-4 text-center  dark:bg-[#383232] bg-[#F4F1F1] mt-2 ml-2 mr-2 mb-2 rounded-[2rem]"  >
+        <div className="px-6 py-4 text-center  dark:bg-[#383232] bg-[#F4F1F1] mt-2 ml-2 mr-2 mb-2 rounded-[2rem]">
           <h1 className="text-xl font-semibold text-zinc-800 dark:text-white">
             Name of Mentor
           </h1>
