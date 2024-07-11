@@ -1,9 +1,7 @@
+import React from "react";
 import PostloginNavbar from "../utilities/PostloginNavbar";
-import Offered_courses from "../components/Starting_courses";
-import Instructors from "../components/Instructors";
-import Footer1 from "../utilities/Footer";
 
-function MyBatches({ theme, handleThemeSwitch }) {
+const UserProfile = ({ theme, handleThemeSwitch }) => {
   return (
     <div
       className={`flex flex-col w-full h-full overflow-x-hidden ${
@@ -13,11 +11,9 @@ function MyBatches({ theme, handleThemeSwitch }) {
       }`}
     >
       <PostloginNavbar handleThemeSwitch={handleThemeSwitch} theme={theme} />
-      <Offered_courses theme={theme} />
-      <Instructors theme={theme} />
-      <Footer1 theme={theme} />
+      Profile
     </div>
   );
-}
+};
 
-export default MyBatches;
+export default UserProfile;

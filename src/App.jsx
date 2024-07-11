@@ -15,6 +15,7 @@ import Videos from "./utilities/Videos";
 import Mentor from "./pages/Mentor";
 import MentorProfile from "./pages/MentorProfile.jsx";
 import JobAlerts from "./pages/JobAlerts.jsx";
+import UserProfile from "./pages/UserProfile.jsx";
 
 const App = () => {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
@@ -111,7 +112,18 @@ const App = () => {
               />
             }
           />
-          <Route path="/job-alerts" element={<JobAlerts />} />
+          <Route
+            path="/job-alerts"
+            element={
+              <JobAlerts theme={theme} handleThemeSwitch={handleThemeSwitch} />
+            }
+          />
+          <Route
+            path="/user-profile"
+            element={
+              <UserProfile theme={theme} handleThemeSwitch={handleThemeSwitch} />
+            }
+          />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
       </BrowserRouter>

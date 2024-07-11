@@ -76,7 +76,7 @@ const PostloginNavbar = ({ theme, handleThemeSwitch }) => {
           )}
         </span>
       </div>
-      <span className="hidden small:flex items-center gap-10">
+      <span className="hidden small:flex items-center gap-5">
         <ul className="flex gap-7">
           <li>
             <Link
@@ -120,6 +120,11 @@ const PostloginNavbar = ({ theme, handleThemeSwitch }) => {
         </ul>
         {/* Replace theme switch button with Toggle component */}
         <Toggle toggled={theme === "dark"} onClick={handleThemeSwitch} />
+        <Link to="/user-profile">
+          <button className="font-medium dark:text-white rounded-lg hover:underline focus:outline-none ">
+            Profile
+          </button>
+        </Link>
         <Link to="/">
           <button className="font-medium dark:text-white border-2 border-orange-500 rounded-lg px-4 py-2 hover:bg-orange-500 hover:text-white focus:outline-none">
             Logout

@@ -1,7 +1,7 @@
 import React from "react";
 import PostloginNavbar from "../utilities/PostloginNavbar";
 
-const JobAlerts = () => {
+const JobAlerts = ({ theme, handleThemeSwitch }) => {
   return (
     <div
       className={`flex flex-col w-full h-full overflow-x-hidden ${

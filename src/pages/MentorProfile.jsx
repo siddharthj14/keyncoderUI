@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import mentorsData from "../data/mentors.json"; // Adjust the import path as needed
-import Postlogin from "../utilities/Postlogin";
+import PostloginNavbar from "../utilities/PostloginNavbar";
 import Footer from "../utilities/Footer";
 
 const MentorProfile = ({ theme, handleThemeSwitch }) => {
