@@ -78,7 +78,7 @@ const App = () => {
           />
 
           <Route path="/login" element={<Login theme={theme} />} />
-          <Route path="/signup" element={<Signup />} />
+          <Route path="/signup" element={<Signup theme={theme} />} />
           <Route
             path="/about"
             element={
