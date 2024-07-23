@@ -1,8 +1,7 @@
 import Navbar from "../utilities/Navbar";
+import Dsacourse from "../components/Dsacourse";
+import Offered_courses from "../components/Starting_courses";
 import Instructors from "../components/Instructors";
-import StudentsReview from "../components/StudentsReview";
-import Footer1 from "../utilities/Footer";
-
 function DsaCourse({ theme, handleThemeSwitch }) {
   return (
     <div
@@ -13,6 +12,7 @@ function DsaCourse({ theme, handleThemeSwitch }) {
       }`}
     >
       <Navbar handleThemeSwitch={handleThemeSwitch} theme={theme} />
+      <Dsacourse theme={theme}/>
     </div>
   );
 }
