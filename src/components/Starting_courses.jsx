@@ -12,7 +12,7 @@ export default function Starting_courses() {
         "how to build a complete full stack web dev app using next.js,prism orm,tailwind,NextUi and NextAuth",
       educator: "Mary",
       rating: 4.9,
-    },
+    },  
     {
       name: "DSA",
       image: "../images/DSA.png",
