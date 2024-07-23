@@ -33,7 +33,7 @@ const CustomCalendar = ({ theme }) => {
 
   return (
     <div
-      className={`text-black calendar-container mt-20 ml-10 rounded-3xl overflow-x-hidden ${
+      className={`text-black mt-20 ml-10 rounded-3xl overflow-x-hidden ${
         theme === "dark"
           ? "bg-black text-white"
           : "bg-gradient-to-r from-[#FA5D2C] via-[#f0663d] to-[#e87657]"

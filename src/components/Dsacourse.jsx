@@ -138,7 +138,7 @@ export default function Landing({ theme }) {
               </div>
             </div>
             {paragraphStates[`paragraph`] && (
-              <p className="mt-4 text-red-500 shadow-lg justify-center text-center">
+              <p className="mt-4 text-red-500 justify-center text-center">
                 Login to view the content
               </p>
             )}
@@ -147,7 +147,7 @@ export default function Landing({ theme }) {
           {[1, 2, 3, 4, 5, 6, 7].map((item) => (
             <div
               key={item}
-              className="container mx-auto p-4 rounded shadow bg-slate-200 dark:bg-slate-600 mt-1  w-4/5"
+              className="container mx-auto p-4 rounded shadow bg-slate-200 dark:bg-slate-600 mt-1 w-4/5"
             >
               <div className="flex items-center justify-between">
                 <h2 className="text-lg font-semibold">Module {item}</h2>
@@ -166,7 +166,7 @@ export default function Landing({ theme }) {
                 </div>
               </div>
               {paragraphStates[`paragraph${item}`] && (
-                <p className="mt-4 text-red-500 shadow-lg justify-center text-center">
+                <p className="mt-4 text-red-500 justify-center text-center">
                   Login to view the content
                 </p>
               )}
@@ -191,7 +191,7 @@ export default function Landing({ theme }) {
               </div>
             </div>
             {paragraphStates[`paragraph`] && (
-              <p className="mt-4 text-red-500 shadow-lg justify-center text-center">
+              <p className="mt-4 text-red-500 justify-center text-center">
                 Login to view the content
               </p>
             )}

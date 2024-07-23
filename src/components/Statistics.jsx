@@ -27,14 +27,14 @@ const data = [
 
 const Statistics = ({ theme }) => {
   return (
-    <div className="w-[35%] h-[300px] mt-3">
+    <div className="w-full h-[300px] mt-3 ">
       <ResponsiveContainer>
         <LineChart
           data={data}
           margin={{
             top: 5,
             right: 30,
-            left: 0,
+            left: -40,
             bottom: 5,
           }}
         >
