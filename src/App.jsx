@@ -16,6 +16,7 @@ import Mentor from "./pages/Mentor";
 import MentorProfile from "./pages/MentorProfile.jsx";
 import JobAlerts from "./pages/JobAlerts.jsx";
 import UserProfile from "./pages/UserProfile.jsx";
+import QuestionPage from "./pages/QuestionsPage.jsx";
 
 const App = () => {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
@@ -118,6 +119,9 @@ const App = () => {
               <JobAlerts theme={theme} handleThemeSwitch={handleThemeSwitch} />
             }
           />
+          <Route path='/questions' element={
+            <QuestionPage theme={theme} handleThemeSwitch={handleThemeSwitch}/>
+          }/>
           <Route
             path="/user-profile"
             element={
