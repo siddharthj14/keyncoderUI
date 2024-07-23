@@ -85,7 +85,7 @@ const QuestionPage = ({ theme, handleThemeSwitch }) => {
 			className={`flex flex-col w-full min-h-screen overflow-x-hidden ${
 				theme === "dark"
 					? "bg-[#131313] text-white"
-					: "bg-gradient-to-r from-[#ED374D] via-[#FA793F] to-[#FCB900] text-black"
+					: "bg-[#f1f1f1] text-black"
 			}`}>
 			<PostloginNavbar handleThemeSwitch={handleThemeSwitch} theme={theme} />
 			<section className="mt-16 md:mt-24">
@@ -96,6 +96,7 @@ const QuestionPage = ({ theme, handleThemeSwitch }) => {
 						stepNo={step.stepNo}
 						title={step.title}
 						questions={step.questions}
+						theme={theme}
 					/>
 				))}
 			</section>
