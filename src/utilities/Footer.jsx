@@ -10,8 +10,12 @@ import React from "react";
 
 function Footer({ theme }) {
   return (
-    <footer className="text-white dark:text-zinc-600 body-font mt-4 md:mt-8">
-      <div className="container mx-auto px-5">
+    <footer
+      className={`${
+        theme === "dark" ? "bg-[#131313]" : "bg-[#1d1534]"
+      } text-white dark:text-zinc-600 body-font`}
+    >
+      <div className="container mx-auto px-5 mt-20">
         <div className="flex flex-col md:flex-row items-center justify-between">
           <p className="text-sm md:text-base text-center md:text-left dark:text-gray-400">
             <span className="flex  items-center">

@@ -1,5 +1,4 @@
 import React from "react";
-import Footer from "../utilities/Footer";
 
 function CallToAction({ theme }) {
   return (
@@ -30,7 +29,6 @@ function CallToAction({ theme }) {
           />
         </div>
       </section>
-      <Footer theme={theme} />
     </div>
   );
 }

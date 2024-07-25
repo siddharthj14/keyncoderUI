@@ -4,7 +4,7 @@ import Courses from "../components/Courses";
 import Mentors from "../components/Mentors";
 import Reason from "../components/Reason";
 import CallToAction from "../components/CallToAction";
-import Testimonial from "../components/Testimonial";
+import Footer from "../utilities/Footer";
 
 function PreLogin({ theme, handleThemeSwitch }) {
   return (
@@ -17,12 +17,12 @@ function PreLogin({ theme, handleThemeSwitch }) {
     >
       <Navbar handleThemeSwitch={handleThemeSwitch} theme={theme} />
       <Landing theme={theme} />
-      <Courses theme={theme}>
-        <Testimonial />
-      </Courses>
+      <Courses theme={theme} />
       <Mentors />
       <Reason theme={theme} />
       <CallToAction theme={theme} />
+      <Footer theme={theme} />
+
     </div>
   );
 }

@@ -1,76 +1,48 @@
 import React, { Children } from "react";
-import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import CourseCarousel from "../utilities/CourseCaraousel";
 
-function Courses({ children, theme }) {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    responsive: [
-      {
-        breakpoint: 1400,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 1225,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          initialSlide: 2,
-        },
-      },
-      {
-        breakpoint: 700,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
-
+function Courses({ theme }) {
   return (
     <>
       <section className=" dark:bg-gradient-to-r from-[#ED374D] via-[#FA793F] to-[#FCB900] bg-[#1d1534] dark:text-black text-white ">
-        <h1 className="mb-[40px] text-center font-bold text-[50px]">
+        <h1 className="text-center text-white font-bold text-5xl mb-10">
           Our Courses
         </h1>
-        <Slider {...settings}>
-          <div className="mx-auto w-full">
-            <h3 className="text-center">Course 1</h3>
-            <CourseCarousel />
+        <div className="bg-[#4E4848] mx-auto w-3/5 h-96 flex rounded-lg">
+          <div className="m-6 bg-[#FFA135] w-1/2 rounded-lg"></div>
+          <div className="m-4 w-1/2">
+            <div className="flex">
+              <div className="text-white text-6xl font-semibold ">DSA</div>
+              <div className="bg-[#DEC649] text-center -mt-4 ml-36 w-40 relative pt-3">
+                <div className="text-gray-900 text-lg font-semibold line-through">
+                  Rs. 9999
+                </div>
+                <div className="text-xl text-gray-900 font-bold">Rs. 3999</div>
+                <div className="flex justify-between absolute -bottom-7">
+                  <div className="bg-[#DEC649] w-20 h-10 skew-y-12"></div>
+                  <div className="bg-[#DEC649] w-20 h-10 -skew-y-12"></div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <ul className="text-white space-y-2 mt-16">
+                <li>✔️ Complete C++ and DSA</li>
+                <li>✔️ Topic Wise Question Practice</li>
+                <li>✔️ Personal Mentor</li>
+                <li>✔️ Placement Assistance</li>
+              </ul>
+              <div className="flex justify-center items-center mt-6">
+                <button className="mt-4 bg-orange-600 text-white py-2 px-4 rounded-lg">
+                  Explore
+                </button>
+              </div>
+            </div>
           </div>
-          <div className="mx-auto w-full">
-            <h3 className="text-center">Course 2</h3>
-            <CourseCarousel />
-          </div>
-          <div className="mx-auto w-full">
-            <h3 className="text-center">Course 3</h3>
-            <CourseCarousel />
-          </div>
-        </Slider>
-        {children}
+        </div>
         {theme === "dark" ? (
-          <div className="relative">
+          <div classNameName="relative">
             <svg
               width="100%"
               height="100%"
