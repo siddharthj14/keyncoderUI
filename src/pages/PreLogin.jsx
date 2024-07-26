@@ -5,6 +5,7 @@ import Mentors from "../components/Mentors";
 import Reason from "../components/Reason";
 import CallToAction from "../components/CallToAction";
 import Footer from "../utilities/Footer";
+import Testimonials from "../components/Testimonials";
 
 function PreLogin({ theme, handleThemeSwitch }) {
   return (
@@ -21,8 +22,8 @@ function PreLogin({ theme, handleThemeSwitch }) {
       <Mentors />
       <Reason theme={theme} />
       <CallToAction theme={theme} />
+      <Testimonials/>
       <Footer theme={theme} />
-
     </div>
   );
 }
