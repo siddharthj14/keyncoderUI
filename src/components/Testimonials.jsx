@@ -3,47 +3,64 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
-const Testimonials = () => {
+const Testimonials = ({ theme }) => {
   var settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    pauseOnHover: true,
   };
 
   const testimonials = [
     {
-      text: "Lorem ipsum courses we have? Lorem ipsum Loremodorigh vodfiy idfjvbid idfjblvsidjfvb sjdfivjsidbfvkjisdifvsj sidjsi isdjbfjsdbfid sidjfbsijbdf sjdfjsbijdsifd sdjofjhosjdhf sjdbfsjdfijs sdfjsbijsfdusjdfisjhfs sdjghfgso sdjf",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, molestias numquam voluptates voluptas temporibus recusandae sed ullam laborum dolores quos ut. Exercitationem quae eius eligendi expedita magni, neque eum perferendis eos voluptates repellat. Quia!",
       name: "Aaron Dessner",
-      image: "path/to/aaron_image.jpg", // replace with actual image path
+      image: "../public/images/Aaron.png",
     },
     {
-      text: "Lorem ipsum courses we have? Lorem ipsum Loremodorigh vodfiy idfjvbid idfjblvsidjfvb sjdfivjsidbfvkjisdifvsj sidjsi isdjbfjsdbfid sidjfbsijbdf sjdfjsbijdsifd sdjofjhosjdhf sjdbfsjdfijs sdfjsbijsfdusjdfisjhfs sdjghfgso sdjf",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, molestias numquam voluptates voluptas temporibus recusandae sed ullam laborum dolores quos ut. Exercitationem quae eius eligendi expedita magni, neque eum perferendis eos voluptates repellat. Quia!",
       name: "Kesh Werawil",
-      image: "path/to/kesh_image.jpg", // replace with actual image path
+      image: "../public/images/Kesh.png",
     },
-    // Add more testimonials as needed
+    {
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, molestias numquam voluptates voluptas temporibus recusandae sed ullam laborum dolores quos ut. Exercitationem quae eius eligendi expedita magni, neque eum perferendis eos voluptates repellat. Quia!",
+        name: "Alan Yarsar",
+        image: "../public/images/Kesh.png",
+      },
+      {
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, molestias numquam voluptates voluptas temporibus recusandae sed ullam laborum dolores quos ut. Exercitationem quae eius eligendi expedita magni, neque eum perferendis eos voluptates repellat. Quia!",
+        name: "Peter quill",
+        image: "../public/images/Kesh.png",
+      },
   ];
 
   return (
-    <div className="testimonial-slider text-center bg-gray-900 py-10">
+    <div
+      className={`flex flex-col gap-16 text-center py-10 ${
+        theme === "dark" ? "bg-[#131313]" : "bg-[#1d1534]"
+      } text-white`}
+    >
+      <h1 className="font-semibold text-2xl md:text-[50px] text-center text-[#E5E5E5]">
+        Hear From Our Students
+      </h1>
       <Slider {...settings}>
         {testimonials.map((testimonial, index) => (
           <div
             key={index}
-            className="testimonial-slide max-w-xl mx-auto p-6 bg-gray-800 rounded-lg relative"
+            className="text-left max-w-lg mx-auto p-6 bg-[#383232] rounded-lg relative"
           >
-            <p className="testimonial-text text-lg mb-4 text-gray-400">
-              {testimonial.text}
-            </p>
-            <div className="testimonial-author flex items-center justify-center">
+            <p className="text-lg mb-4 text-gray-400">{testimonial.text}</p>
+            <div className=" flex items-center justify-end">
+              <p className=" text-white">{testimonial.name}</p>
               <img
                 src={testimonial.image}
                 alt={testimonial.name}
-                className="testimonial-image w-12 h-12 rounded-full mr-4"
+                className="w-16 h-16 rounded-full mx-4"
               />
-              <p className="testimonial-name text-white">{testimonial.name}</p>
             </div>
           </div>
         ))}

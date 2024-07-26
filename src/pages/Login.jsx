@@ -2,6 +2,9 @@ import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 function Login({ theme }) {
+	// const [email, setEmail] = useState("");
+	// const [password, setPassword] = useState("");
+
   const navigate = useNavigate();
 
   const handleLogin = (e) => {

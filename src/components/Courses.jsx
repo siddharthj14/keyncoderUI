@@ -17,7 +17,7 @@ function Courses({ theme }) {
               <div className="text-white text-6xl font-semibold ">DSA</div>
               <div className="bg-[#DEC649] text-center -mt-4 ml-36 w-40 relative pt-3">
                 <div className="text-gray-900 text-lg font-semibold line-through">
-                  Rs. 9999
+                  Rs. 4999
                 </div>
                 <div className="text-xl text-gray-900 font-bold">Rs. 3999</div>
                 <div className="flex justify-between absolute -bottom-7">

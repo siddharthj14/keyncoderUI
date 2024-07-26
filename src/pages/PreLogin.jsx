@@ -22,7 +22,7 @@ function PreLogin({ theme, handleThemeSwitch }) {
       <Mentors />
       <Reason theme={theme} />
       <CallToAction theme={theme} />
-      <Testimonials/>
+      <Testimonials theme={theme}/>
       <Footer theme={theme} />
     </div>
   );
