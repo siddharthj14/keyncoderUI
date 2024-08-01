@@ -3,14 +3,14 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useNavigate } from "react-router-dom";
 
-function Courses({ theme }) {
+function Courses({ theme,id }) {
 	const navigate = useNavigate();
 	const toCourse = () => {
 		navigate("/dsa");
 	};
 	return (
 		<>
-			<section
+			<section id={id}
 				className={`bg-[#1d1534] ${
 					theme === "dark"
 						? "dark:bg-gradient-to-r from-[#ED374D] via-[#FA793F] to-[#FCB900] dark:text-black"

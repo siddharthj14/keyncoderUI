@@ -112,13 +112,8 @@ export default function Landing({ theme }) {
 
         {/* Course details section */}
         <div>
-          <div className="mx-40 mb-10">
-            <div className="text-3xl font-bold mt-6">This Course Includes:</div>
-            <ul className="text-2xl mt-2 flex-col items-center">
-              <li className="list-disc ml-5">23 sections</li>
-              <li className="list-disc ml-5">18 lectures</li>
-              <li className="list-disc ml-5">Total length : 2h 38m</li>
-            </ul>
+          <div className="mx-28 mb-10 text-left">
+            <h1 className="text-3xl font-bold mt-6">This Course Includes:</h1>
           </div>
           <div className="container mx-auto p-4 rounded shadow bg-slate-300 dark:bg-slate-600 mt-1 w-4/5">
             <div className="flex items-center justify-between">
