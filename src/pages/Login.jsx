@@ -11,14 +11,15 @@ function Login({ theme }) {
 
 	const handleLogin = async (e) => {
 		e.preventDefault();
-		try {
-			const data = await login(email, password);
-			// Handle the response data (e.g., save token, navigate)
-			// localStorage.setItem('token', data.token);
-			navigate("/user-postlogin");
-		} catch (error) {
-			alert(error.message);
-		}
+		// try {
+		// 	const data = await login(email, password);
+		// 	// Handle the response data (e.g., save token, navigate)
+		// 	// localStorage.setItem('token', data.token);
+		// 	navigate("/user-postlogin");
+		// } catch (error) {
+		// 	alert(error.message);
+		// }
+		navigate("/user-postlogin");
 	};
 
 	return (
