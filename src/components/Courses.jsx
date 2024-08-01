@@ -1,9 +1,13 @@
 import React from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import CourseCarousel from "../utilities/CourseCaraousel";
+import { useNavigate } from "react-router-dom";
 
 function Courses({ theme }) {
+	const navigate = useNavigate();
+	const toCourse = () => {
+		navigate("/dsa");
+	};
 	return (
 		<>
 			<section
@@ -27,7 +31,7 @@ function Courses({ theme }) {
 						</div>
 					</div>
 					{/* Orange Section */}
-					<div className='relative bg-[#FFA135] my-3 mx-4 md:mx-8 rounded-lg flex items-center justify-center h-36 md:h-[360px]'>
+					<div className='relative bg-[#FFA135] my-3 mx-4 md:mx-8 rounded-lg flex items-center md:w-3/5 justify-center h-60 md:h-[360px]'>
 						<img
 							src='path_to_image'
 							alt='Course Image'
@@ -45,7 +49,7 @@ function Courses({ theme }) {
 							<li>✔️ Placement Assistance</li>
 						</ul>
 						<div className='flex justify-center md:justify-start items-center mt-6'>
-							<button className='bg-orange-600 text-white py-2 px-4 rounded-lg'>
+							<button className='bg-orange-600 text-white py-2 px-4 rounded-lg' onClick={toCourse}>
 								Explore
 							</button>
 						</div>
