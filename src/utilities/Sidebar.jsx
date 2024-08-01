@@ -18,7 +18,7 @@ const Sidebar = ({
   handleThemeSwitch,
 }) => {
   return (
-    <div className="flex flex-col fixed top-0 right-0 h-screen w-[300px] bg-zinc-900 text-white font-sans">
+    <div className="flex flex-col fixed top-0 right-0 h-dvh w-[300px] bg-zinc-900 text-white font-sans">
       <div className="flex justify-between items-center p-5 border-b border-zinc-700">
         <h1 className="text-lg font-bold">keyNcoders</h1>
         <button
