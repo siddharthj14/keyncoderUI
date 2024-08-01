@@ -33,7 +33,7 @@ function Courses({ theme,id }) {
 					{/* Orange Section */}
 					<div className='relative bg-[#FFA135] my-3 mx-4 md:mx-8 rounded-lg flex items-center md:w-3/5 justify-center h-60 md:h-[360px]'>
 						<img
-							src='path_to_image'
+							src='./images/dsaCourse.png'
 							alt='Course Image'
 							className='object-cover h-full w-full rounded-lg'
 						/>
