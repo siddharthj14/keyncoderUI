@@ -262,8 +262,8 @@ function AboutUs({ handleThemeSwitch, theme }) {
             />
           </div>
         </div>
-        <Footer theme={theme} />
       </section>
+        <Footer theme={theme} />
     </>
   );
 }

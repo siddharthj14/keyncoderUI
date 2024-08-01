@@ -20,7 +20,7 @@ function ContactUs({ theme, handleThemeSwitch }) {
           theme === "dark"
             ? "bg-[#131313]"
             : "bg-gradient-to-r from-[#ED374D] via-[#FA793F] to-[#FCB900]"
-        } flex items-center justify-center p-6`}
+        } flex items-center justify-center mt-8 p-6`}
       >
         <div className="bg-gradient-to-r from-red-200 to-orange-200 shadow-lg rounded-3xl p-8 w-full max-w-5xl">
           <h2 className="text-center text-2xl font-bold mb-6">CONTACT US</h2>
