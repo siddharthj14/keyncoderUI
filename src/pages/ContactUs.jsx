@@ -22,13 +22,13 @@ function ContactUs({ theme, handleThemeSwitch }) {
 					theme === "dark"
 						? "bg-[#131313]"
 						: "bg-gradient-to-r from-[#ED374D] via-[#FA793F] to-[#FCB900]"
-				} flex items-center justify-center mt-8 p-6`}>
-				<div className='bg-gradient-to-r from-red-200 to-orange-200 shadow-lg rounded-3xl p-8 w-full max-w-5xl'>
+				} flex items-center justify-center mt-[4rem] p-16`}>
+				<div className='bg-gradient-to-r from-red-200 to-orange-200 shadow-lg rounded-3xl p-10 w-full max-w-5xl'>
 					<h2 className='text-center text-2xl font-bold mb-6'>CONTACT US</h2>
 					<div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
 						<div className='md:col-span-2 text-center mb-8'>
 							<h3 className='text-lg font-semibold text-red-600'>
-								We love our community :)
+								We love our community :{")"}
 							</h3>
 							<p>
 								Have questions or feedback? We'd love to hear from you! Get in touch

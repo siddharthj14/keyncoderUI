@@ -14,7 +14,7 @@ export default function Landing({ theme }) {
       }
     >
       <div className="mx-10 md:mx-12 mt-1 p-6 md:p-12 flex flex-col medium:flex-row items-center justify-between">
-        <div className="space-y-1 md:space-y-10">
+        <div className="space-y-1 md:space-y-10"  >
           <h1 className="text-4xl pt-8 leading-[1.1] md:text-5xl md:leading-[1.3] font-bold text-zinc-900 dark:text-white">
             Unlock your
             <br />
@@ -35,11 +35,11 @@ export default function Landing({ theme }) {
             </button>
           </div>
         </div>
-        <div className="mt-12 md:mt-[100px]">
+        <div className="mt-0">
           <img
             src="../images/hero2.png"
             alt="Person pointing"
-            className="max-w-xs md:max-w-lg lg:max-w-3xl m-6 medium:m-2 rounded-lg "
+            className="max-w-xs md:max-w-lg lg:max-w-xl m-6 medium:m-2 rounded-lg "
           />
         </div>
       </div>

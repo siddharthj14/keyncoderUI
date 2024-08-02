@@ -29,7 +29,7 @@ function Login({ theme }) {
 					? "bg-gradient-to-r from-[#292626] via-[rgb(89,77,77)] to-[#847373] text-white"
 					: "bg-gradient-to-r from-[#ED374D] via-[#FA793F] to-[#FCB900] text-black"
 			} flex items-center justify-center w-full`}>
-			<div className='bg-white rounded-lg p-8 m-6 flex md:flex-row flex-col-reverse md:px-0 dark:bg-[#292626]'>
+			<div className='bg-white rounded-lg p-8 m-6 flex md:flex-row flex-col-reverse md:px-0 md:pr-10 dark:bg-[#292626]'>
 				<div className='left max-w-md h-96 w-fit bg-white-300 flex-1 relative'>
 					<img
 						src={theme === "dark" ? "/images/login_dark.png" : "/images/login.png"}
