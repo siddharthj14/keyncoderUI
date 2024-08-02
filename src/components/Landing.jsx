@@ -37,9 +37,9 @@ export default function Landing({ theme }) {
         </div>
         <div className="mt-12 md:mt-[100px]">
           <img
-            src="../images/hero.png"
+            src="../images/hero2.png"
             alt="Person pointing"
-            className="max-w-xs medium:max-w-lg m-6 medium:m-2 rounded-lg "
+            className="max-w-xs md:max-w-lg lg:max-w-3xl m-6 medium:m-2 rounded-lg "
           />
         </div>
       </div>
