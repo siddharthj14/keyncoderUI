@@ -91,15 +91,15 @@ const PostLogin = ({ theme, handleThemeSwitch }) => {
           </div>
         </div>
       ) : (
-        <div>
+        <div className="mt-[3.9rem]">
           <div
-            className={`mt-18 w-full h-[100vh] ${
+            className={`w-full h-[90vh] ${
               theme == "dark"
                 ? "bg-[#1D1534]"
                 : "bg-gradient-to-r from-[#ED374D] via-[#FA793F] to-[#FCB900]"
             }`}
           >
-            <div className="mx-10 md:mx-12 flex flex-col medium:flex-row items-center justify-between">
+            <div className=" mx-10 md:mx-12 flex flex-col medium:flex-row items-center justify-between">
               <div className="">
                 <h1 className="max-w-xl text-4xl leading-[1.1] md:text-5xl md:leading-[1.3] font-bold text-white dark:text-white">
                   Hey{" "}
@@ -113,7 +113,6 @@ const PostLogin = ({ theme, handleThemeSwitch }) => {
                   Home
                 </button>
               </div>
-
               <LaptopSlider />
             </div>
             <div className="absolute bottom-0 left-0 w-full z-10">
