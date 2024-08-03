@@ -17,10 +17,14 @@ function Footer({ theme }) {
 				} text-black body-font`}>
 				<div className='container mx-auto px-5 pt-8'>
 					<div className='flex flex-col md:flex-row items-center justify-between'>
-						<p className='text-sm md:text-base text-center md:text-left dark:text-gray-400'>
-							<span className='flex  items-center'>
-								<span className='text-[25px] mr-2'>©</span>2024 keyNcoders
-							</span>
+						<p className='text-black font-bold text-base md:text-lg text-center md:text-left mb-4 md:mb-0'>
+							<img
+								src={
+									theme === "dark" ? "../images/logolight.png" : "../images/logo.png"
+								}
+								alt='Logo'
+								className='w-40 h-10'
+							/>
 						</p>
 						<span className='inline-flex mt-2 md:mt-0'>
 							<a
@@ -33,14 +37,10 @@ function Footer({ theme }) {
 					<hr className='w-full mt-3 border-0 h-[1px] bg-gray-900 dark:bg-gray-300' />
 
 					<div className='flex flex-col md:flex-row items-center justify-between py-4'>
-						<p className='text-black font-bold text-base md:text-lg text-center md:text-left mb-4 md:mb-0'>
-							<img
-								src={
-									theme === "dark" ? "../images/logolight.png" : "../images/logo.png"
-								}
-								alt='Logo'
-								className='w-40 h-10'
-							/>
+						<p className='text-sm md:text-base text-center md:text-left dark:text-gray-400'>
+							<span className='flex  items-center'>
+								<span className='text-[25px] mr-2'>©</span>2024 keyNcoders
+							</span>
 						</p>
 						<span className='flex flex-col md:flex-row justify-center items-center gap-4 md:gap-8 dark:text-gray-400'>
 							<Link

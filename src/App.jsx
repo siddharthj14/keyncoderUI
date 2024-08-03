@@ -19,7 +19,7 @@ import UserProfile from "./pages/UserProfile.jsx";
 import QuestionPage from "./pages/QuestionsPage.jsx";
 
 const App = () => {
-  const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");
 
   useEffect(() => {
     if (theme === "dark") {
