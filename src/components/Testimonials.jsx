@@ -29,7 +29,7 @@ const testimonials=[
 	},
 ];
 
-const Testimonials = ({ theme ,type}) => {
+const Testimonials = ({ theme ,type,course}) => {
 	const settings = {
 		dots: true,
 		infinite: true,
@@ -55,8 +55,8 @@ const Testimonials = ({ theme ,type}) => {
 		<div
 			className={`flex flex-col text-center py-10 ${
 				theme === "dark" ? "bg-[#131313]" : "bg-[#1d1534]"
-			} text-white`}>
-			<h1 className='font-bold text-3xl md:text-5xl text-center mb-3 text-[#E5E5E5]'>
+			} text-white ${course ? "bg-transparent" : ""}`}>
+			<h1 className={`font-bold text-3xl md:text-5xl text-center mb-3 text-[#E5E5E5] ${course?'text-black':''}`}>
 				{type === "student" ? "Hear From Our Students" : "Expert Reviews"}
 			</h1>
 			<p className='mt-0 text-[#8A8A8A]'>

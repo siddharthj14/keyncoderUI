@@ -1,6 +1,7 @@
 import Courses from "./Courses";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 export default function Landing({ theme }) {
   const handleClick = () => {
     <Courses />;
@@ -24,9 +25,9 @@ export default function Landing({ theme }) {
 							Leaders, keyNcoders Connects You with Tech Success.
 						</p>
 						<div className='flex flex-row justify-center items-center mx-auto w-full'>
-							<button className='dark:bg-orange-600 bg-orange-500 shadow-custom hover:shadow-lg hover:bg-orange-500 text-white font-bold py-2 px-4 rounded-lg md:mt-0 mt-10'>
+							<Link to={'/dsa'} className='dark:bg-orange-600 bg-orange-500 shadow-custom hover:shadow-lg hover:bg-orange-500 text-white font-bold py-2 px-4 rounded-lg md:mt-0 mt-10'>
 								Join Now
-							</button>
+							</Link>
 						</div>
 					</div>
 
