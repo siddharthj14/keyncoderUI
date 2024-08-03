@@ -18,12 +18,9 @@ function ContactUs({ theme, handleThemeSwitch }) {
 			<Navbar handleThemeSwitch={handleThemeSwitch} theme={theme} />
 
 			<div
-				className={`flex-grow ${
-					theme === "dark"
-						? "bg-[#131313]"
-						: "bg-gradient-to-r from-[#ED374D] via-[#FA793F] to-[#FCB900]"
-				} flex items-center justify-center mt-[4rem] p-16`}>
-				<div className='bg-gradient-to-r from-red-200 to-orange-200 shadow-lg rounded-3xl p-10 w-full max-w-5xl'>
+				className={`flex-grow 
+						bg-gradient-to-r from-[#ED374D] via-[#FA793F] to-[#FCB900] flex items-center justify-center mt-[4rem] p-16`}>
+				<div className='bg-gradient-to-r from-red-200 to-orange-200 dark:bg-gray-800 shadow-lg rounded-3xl p-10 w-full max-w-5xl'>
 					<h2 className='text-center text-2xl font-bold mb-6'>CONTACT US</h2>
 					<div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
 						<div className='md:col-span-2 text-center mb-8'>
@@ -99,11 +96,24 @@ function ContactUs({ theme, handleThemeSwitch }) {
 				</div>
 			</div>
 			<div
-				className={`${
-					theme === "dark"
-						? "bg-[#131313]"
-						: "bg-gradient-to-r from-[#ED374D] via-[#FA793F] to-[#FCB900]"
+				className={`
+						bg-gradient-to-r from-[#ED374D] via-[#FA793F] to-[#FCB900]
 				}`}>
+				<div className='relative w-full'>
+					<svg
+						width='100%'
+						height='100%'
+						id='svg'
+						viewBox='0 0 1440 320'
+						xmlns='http://www.w3.org/2000/svg'>
+						<path
+							d='M0,160L40,181.3C80,203,160,245,240,261.3C320,277,400,267,480,245.3C560,224,640,192,720,197.3C800,203,880,245,960,256C1040,267,1120,245,1200,218.7C1280,192,1360,160,1400,144L1440,128L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z'
+							stroke='none'
+							strokeWidth='0'
+							fill={theme === "dark" ? "#232222" : "#E6E6E6"}
+							fillOpacity='1'></path>
+					</svg>
+				</div>
 				<Footer theme={theme} />
 			</div>
 		</section>

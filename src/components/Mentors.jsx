@@ -7,7 +7,7 @@ function Mentors() {
 					Our Mentors
 				</h1>
 				<p className='mt-4 text-[#8A8A8A] text-center text-base md:text-lg'>
-					Lorem Ipsum courses we have? lorem ipsum
+					Because mentors make the difference, we have…
 				</p>
 				<div className='flex flex-col md:flex-row justify-center items-center md:items-stretch gap-6 md:gap-12 mt-8 md:mt-12'>
 					<MentorCard />

@@ -13,16 +13,15 @@ function AboutUs({ handleThemeSwitch, theme }) {
 			<>
 				<Navbar handleThemeSwitch={handleThemeSwitch} theme={theme} />
 				<section
-					className={`${getGradientBackground()} min-h-screen pt-10 md:pt-20 mb-0 flex flex-col justify-between relative`}>
+					className={`bg-gradient-to-r from-[#ED374D] via-[#FA793F] to-[#FCB900] min-h-screen pt-10 md:pt-20 mb-0 flex flex-col justify-between relative`}>
 					<div>
 						<h1 className='text-gray-700 dark:text-gray-300 text-[40px] md:text-[85px] text-center font-bold mt-20 md:mt-40 mb-4'>
 							Revolutionizing Education
 						</h1>
 						<p className='text-black dark:text-gray-300 text-md md:text-lg text-justify m-auto w-[90%] md:w-[60%]'>
-							Lorem Ipsum is simply dummy text of the printing and typesetting
-							industry. Lorem Ipsum has been the industry's standard dummy text ever
-							since the 1500s, when an unknown printer took a galley of type and
-							scrambled it to make a type specimen book.
+							No matter who you are or where you come from, we provide the best
+							training and placement opportunities for everyone, from all walks of
+							life.
 						</p>
 					</div>
 					<div className='absolute bottom-0 left-0 w-full z-10'>
@@ -79,11 +78,12 @@ function AboutUs({ handleThemeSwitch, theme }) {
 								</h1>
 							</div>
 							<p className=' dark:text-gray-400 w-full md:w-[90%] text-justify'>
-								Lorem Ipsum is simply dummy text of the printing and typesetting
-								industry. Lorem Ipsum has been the industry's standard dummy text ever
-								since the 1500s. Lorem Ipsum is simply dummy text of the printing and
-								typesetting industry. Lorem Ipsum has been the industry's standard dummy
-								text ever since the 1500s.
+								Even with high enrollment in BCA and similar degrees across many local
+								colleges in India, there’s a significant gap in helping students find
+								good career opportunities. Many colleges have weak or nonexistent
+								placement cells, making it harder for students to become job-ready. On
+								the other hand, startups and companies also struggle to find skilled
+								professionals within their budgets.
 							</p>
 						</div>
 						<div className='w-full md:w-[600px] flex flex-col items-start p-5 md:p-20'>
@@ -94,11 +94,10 @@ function AboutUs({ handleThemeSwitch, theme }) {
 								</h1>
 							</div>
 							<p className=' dark:text-gray-400 w-full md:w-[90%] text-justify'>
-								Lorem Ipsum is simply dummy text of the printing and typesetting
-								industry. Lorem Ipsum has been the industry's standard dummy text ever
-								since the 1500s. Lorem Ipsum is simply dummy text of the printing and
-								typesetting industry. Lorem Ipsum has been the industry's standard dummy
-								text ever since the 1500s.
+								Keyncoders aims to be the finest training and placement cell for local
+								colleges nationwide. We believe that, regardless of financial or
+								location constraints, every deserving candidate deserves excellent
+								skills and placement opportunities.
 							</p>
 						</div>
 					</div>
@@ -113,18 +112,13 @@ function AboutUs({ handleThemeSwitch, theme }) {
 								Lorem Ipsum
 							</h2>
 							<p className='dark:text-gray-400 text-justify'>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
-								suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan
-								lacus vel facilisis consectetur adipiscing elit. <br />
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
-								suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan
-								lacus vel facilisis consectetur adipiscing elit. <br />
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
-								suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan
-								lacus vel
+								Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure nisi esse
+								ipsa quis id iusto, cupiditate illo soluta explicabo optio? Ipsam
+								accusamus, maxime reprehenderit nesciunt molestias culpa debitis odio
+								expedita!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Voluptatum delectus dolore id quae exercitationem molestiae natus
+								distinctio porro voluptates fugit architecto laudantium veritatis,
+								suscipit enim vel nostrum, accusantium pariatur. Ullam.
 							</p>
 						</div>
 						<img src='/images/human.png' alt='Founders' className='rounded-lg' />
@@ -156,52 +150,47 @@ function AboutUs({ handleThemeSwitch, theme }) {
 					</div>
 				</section>
 				<section className={`${getGradientBackground(1)} text-black`}>
-					<div className='dark:text-white text-center text-3xl font-bold mb-6'>
+					<div className='dark:text-white text-center md:text-5xl text-3xl font-bold mb-6'>
 						Who are we?
 					</div>
 					<p className='text-center max-w-md mx-auto mb-8'>
-						Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-						Lorem Ipsum has been the industry's standard dummy text ever since the
-						1500s, when an unknown printer took a galley of type and scrambled it to
+						At KeyNcoders, we ensure skilled students are matched with tech companies
 					</p>
 					<div className='flex flex-wrap justify-center gap-8'>
 						<div className='w-full h-fit md:w-[400px] rounded-3xl bg-gray-200 dark:bg-gray-700 mb-10 md:mb-0 p-6'>
-							<div className='text-center text-3xl'>🚀</div>
 							<p className='text-center'>
 								<i className='text-black dark:text-gray-300 font-bold'>
-									Lorem ispum is simply
+									Your Learning partner
 								</i>
 							</p>
 							<p className='text-gray-800 dark:text-gray-400'>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-								repellat maiores debitis earum vitae quia a. Eos rerum consequatur dolor
-								nam veritatis, ducimus dolores in distinctio neque repellat corrupti id!
+								KeyNcoders provides a tailored curriculum, structured learning path, and
+								dedicated mentors to ensure students meet current industry needs and
+								excel in interviews.
 							</p>
 						</div>
 						<div className='w-full h-fit md:w-[400px] mt-40 rounded-3xl bg-gray-200 dark:bg-gray-700 mb-10 md:mb-0 p-6'>
-							<div className='text-center text-3xl'>🚀</div>
 							<p className='text-center'>
 								<i className='text-black dark:text-gray-300 font-bold'>
-									Lorem ispum is simply
+									Your Placement Cell
 								</i>
 							</p>
 							<p className='text-gray-800 dark:text-gray-400'>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-								repellat maiores debitis earum vitae quia a. Eos rerum consequatur dolor
-								nam veritatis, ducimus dolores in distinctio neque repellat corrupti id!
+								KeyNcoders offers placement support for BCA and similar degrees,
+								bridging gaps for colleges with weak placement cells and ensuring equal
+								access to opportunities.
 							</p>
 						</div>
 						<div className='w-full h-fit md:w-[400px] rounded-3xl bg-gray-200 dark:bg-gray-700 mb-10 md:mb-0 p-6'>
-							<div className='text-center text-3xl'>🚀</div>
 							<p className='text-center'>
 								<i className='text-black dark:text-gray-300 font-bold'>
-									Lorem ispum is simply
+									Your Hiring Partner
 								</i>
 							</p>
 							<p className='text-gray-800 dark:text-gray-400'>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-								repellat maiores debitis earum vitae quia a. Eos rerum consequatur dolor
-								nam veritatis, ducimus dolores in distinctio neque repellat corrupti id!
+								KeyNcoders partners with tech companies for direct hiring and offers
+								budget-friendly solutions, connecting skilled candidates with affordable
+								opportunities.
 							</p>
 						</div>
 					</div>
