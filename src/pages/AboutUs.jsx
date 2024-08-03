@@ -12,22 +12,25 @@ function AboutUs({ handleThemeSwitch, theme }) {
   return (
 			<>
 				<Navbar handleThemeSwitch={handleThemeSwitch} theme={theme} />
-				<section className={`${getGradientBackground()} min-h-screen pt-10 md:pt-20`}>
-					<h1 className='text-gray-700 dark:text-gray-300 text-[40px] md:text-[85px] text-center font-bold mt-20 md:mt-40 mb-4'>
-						Revolutionizing Education
-					</h1>
-					<p className='text-black dark:text-gray-300 text-md md:text-lg text-justify m-auto w-[90%] md:w-[60%]'>
-						Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-						Lorem Ipsum has been the industry's standard dummy text ever since the
-						1500s, when an unknown printer took a galley of type and scrambled it to
-						make a type specimen book.
-					</p>
-					<div className='relative'>
+				<section
+					className={`${getGradientBackground()} min-h-screen pt-10 md:pt-20 mb-0 flex flex-col justify-between relative`}>
+					<div>
+						<h1 className='text-gray-700 dark:text-gray-300 text-[40px] md:text-[85px] text-center font-bold mt-20 md:mt-40 mb-4'>
+							Revolutionizing Education
+						</h1>
+						<p className='text-black dark:text-gray-300 text-md md:text-lg text-justify m-auto w-[90%] md:w-[60%]'>
+							Lorem Ipsum is simply dummy text of the printing and typesetting
+							industry. Lorem Ipsum has been the industry's standard dummy text ever
+							since the 1500s, when an unknown printer took a galley of type and
+							scrambled it to make a type specimen book.
+						</p>
+					</div>
+					<div className='absolute bottom-0 left-0 w-full z-10'>
 						<svg
 							width='100%'
 							height='100%'
 							id='svg'
-							viewBox='0 0 1440 310' // Changed the viewBox to better fit the wave
+							viewBox='0 0 1440 320'
 							xmlns='http://www.w3.org/2000/svg'>
 							<defs>
 								<linearGradient id='gradient' x1='0%' y1='50%' x2='100%' y2='50%'>
@@ -45,7 +48,8 @@ function AboutUs({ handleThemeSwitch, theme }) {
 						</svg>
 					</div>
 				</section>
-				<section className={`bg-[#D9D9D9] dark:bg-[#1a1a1a] h-fit `}>
+
+				<section className={`bg-[#D9D9D9] dark:bg-[#1a1a1a] h-fit mt-[-2px]`}>
 					<div className='flex flex-col md:flex-row p-10 md:p-20 justify-around'>
 						<div className='h-[200px] md:h-[500px] w-full md:w-[600px] rounded-3xl bg-gray-200 dark:bg-gray-700 mb-10 md:mb-0'></div>
 						<div className='w-full md:w-[600px] flex flex-col items-start p-5 md:p-20'>

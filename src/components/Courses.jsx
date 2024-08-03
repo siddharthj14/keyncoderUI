@@ -19,7 +19,7 @@ function Courses({ theme,id }) {
 				<h1 className='text-center font-bold text-3xl md:text-5xl mb-6 md:mb-10'>
 					Our Courses
 				</h1>
-				<div className='bg-[#4E4848] mx-auto lg:w-3/5 h-auto md:h-96 flex flex-col md:flex-row rounded-lg overflow-hidden relative'>
+				<div className='bg-[#4E4848] lg:mx-auto mx-5 lg:w-3/5 h-auto md:h-96 flex flex-col md:flex-row rounded-lg overflow-hidden relative'>
 					<div className='bg-[#DEC649] text-center w-40 py-3 absolute top-0 right-0 z-10'>
 						<div className='text-gray-900 text-lg font-thin line-through'>
 							Rs. 4999

@@ -53,16 +53,16 @@ const Testimonials = ({ theme ,type}) => {
 
 	return (
 		<div
-			className={`flex flex-col gap-16 text-center py-10 ${
+			className={`flex flex-col text-center py-10 ${
 				theme === "dark" ? "bg-[#131313]" : "bg-[#1d1534]"
 			} text-white`}>
-			<h1 className='font-bold text-3xl md:text-5xl text-center mb-0 text-[#E5E5E5]'>
+			<h1 className='font-bold text-3xl md:text-5xl text-center mb-3 text-[#E5E5E5]'>
 				{type === "student" ? "Hear From Our Students" : "Expert Reviews"}
 			</h1>
 			<p className='mt-0 text-[#8A8A8A]'>
 				{type != "student" ? "Hear what Industry people say about our Course" : ""}
 			</p>
-			<Slider {...settings} className='text-white'>
+			<Slider {...settings} className='text-white mx-5 mt-10'>
 				{testimonials.map((testimonial, index) => (
 					<div
 						key={index}

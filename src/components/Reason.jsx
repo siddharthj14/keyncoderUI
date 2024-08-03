@@ -28,8 +28,8 @@ function Reason({ theme }) {
       </div>
       <section className="bg-gradient-to-r from-[#ED374D] via-[#FA793F] to-[#FCB900] ">
         <div className="text-center mb-[40px]">
-          <h2 className="text-[50px] font-semibold mb-2">
-            Why Choose KeyNcoder
+          <h2 className="md:text-5xl text-3xl font-bold mb-2">
+            Why Choose KeyNcoders
           </h2>
           <p className="dark:text-black dark:font-semibold text-white">
             Lorem Ipsum courses we have? lorem ipsum
