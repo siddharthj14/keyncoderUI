@@ -12,7 +12,7 @@ export default function Landing({ theme }) {
 						? " bg-[#131313]"
 						: " bg-gradient-to-r from-[#ED374D] via-[#FA793F] to-[#FCB900] "
 				}>
-				<div className='mx-10 min-h-screen md:mx-12 mt-1 p-6 pb-0 md:p-12 flex flex-col medium:flex-row items-center justify-center'>
+				<div className='mx-10 md:mx-12 mt-1 p-6 md:p-12 flex flex-col medium:flex-row items-center justify-between'>
 					<div className='space-y-4 md:space-y-10'>
 						<h1 className='text-4xl pt-8 leading-[1.1] md:text-5xl md:leading-[1.3] font-bold text-zinc-900 dark:text-white'>
 							From Classroom
@@ -30,11 +30,11 @@ export default function Landing({ theme }) {
 						</div>
 					</div>
 
-					<div className='mt-0 top-0'>
+					<div className='mt-0 bottom-0'>
 						<img
 							src='../images/hero2.png'
 							alt='Person pointing'
-							className='max-w-xs md:max-w-lg lg:max-w-xl medium:m-2 rounded-lg '
+							className='max-w-xs md:max-w-lg lg:max-w-xl m-6 medium:m-2 rounded-lg '
 						/>
 					</div>
 				</div>
